@@ -85,11 +85,17 @@ disqusShortname               = "fvcproductions"
     name                      = "About 😊"
     url                       = "/about/"
 [[menu.left]]
+    name                      = "Archive 🕒"
+    url                       = "/archive/"
+[[menu.left]]
     name                      = "Blog 📝"
     url                       = "/blog/"
 [[menu.left]]
     name                      = "Contact 📥"
     url                       = "/contact/"
+[[menu.left]]
+    name                      = "Getting Started 🌟️"
+    url                       = "/getting-started/"
 [[menu.left]]
     name                      = "Portfolio 💼"
     url                       = "/portfolio/"

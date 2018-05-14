@@ -6,6 +6,8 @@
 
 A starter theme for Hugo created with Bulma and optimized with modern workflows and tooling. 🌟️
 
+**THIS IS STILL A WORK IN PROGRESS. NOT OFFICIALLY PUBLISHED AS A THEME YET.**
+
 ## Installation
 
 ```bash
@@ -54,7 +56,25 @@ It is set up to use [PostCSS](http://postcss.org/) and [Babel](https://babeljs.i
 └── webpack.config.js   // Webpack config
 ```
 
-## Examples
+## Theme Screenshots
+
+> Home Page
+
+![Screenshot 1](https://i.imgur.com/Ov53PDR.png)
+
+> Single Page - About
+
+![Screenshot 2](https://i.imgur.com/teLtnI0.png)
+
+> Section Page - Portfolio
+
+![Screenshot 3](https://i.imgur.com/vmE3WY2.png)
+
+> It's mobile friendly!
+
+![Screenshot 4](https://i.imgur.com/1qNzMGW.png)
+
+## Live Action
 
 * Website for [Techqueria.org](http://techqueria.org/)
 
