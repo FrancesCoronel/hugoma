@@ -1,0 +1,32 @@
+{{ define "main" }}
+<!-- Hero -->
+<section class="hero is-primary is-bold is-fullheight">
+  <div class="hero-body">
+    <div class="container has-text-centered ">
+      <h1 class="title">
+        {{ .Title }}
+      </h1>
+      <h2 class="subtitle">
+        {{ .Site.Params.description }}
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- All Pages -->
+<section class="section page">
+  <div class="container">
+    <div class="columns is-multiline">
+      <!-- Pages -->
+      {{ $pages := where .Site.RegularPages "Type" "page" }}
+      <!-- Pages & Section Pages -->
+      {{ $pages := $pages | union (.Site.Sections) }}
+      <!-- Looping -->
+      {{ range $pages.ByTitle }}
+      <div class="column is-one-quarter">
+        {{ partial "card.html" . }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

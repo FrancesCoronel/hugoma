@@ -1,0 +1,96 @@
+baseURL                       = "/"
+title                         = "Hugoma Theme"
+metaDataFormat                = "yaml"
+enableEmoji                   = true
+footnoteReturnLinkContents    = "↩"
+
+# Language
+languageCode                  = "en-us"
+defaultContentLanguage        = "en"
+
+# Code
+pygmentsCodefences            = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsStyle                 = "manni"
+
+# Internal Templates
+# googleAnalytics             = ""
+disqusShortname               = "fvcproductions"
+
+# RSS
+[outputs]
+    home                      = ["HTML", "AMP", "RSS"]
+    page                      = ["HTML", "AMP"]
+
+# Output Formats
+[outputFormats]
+    [outputFormats.RSS]
+        mediatype             = "application/rss"
+        baseName              = "feed"
+
+# SEO
+# og_image - image when shown when shared on social media
+[params]
+    description               = "A starter theme for Hugo created with Bulma and optimized with modern workflows and tooling. 🌟️"
+    copyright                 = "FVCproductions"
+    year                      = 2018
+    og_image                  = "https://i.imgur.com/mGA3X7m.png"
+    logo                      = "/assets/img/favicons/128x128.png"
+    github                    = "fvcproductions/hugoma-theme"
+    # set to false to hide the Contributions footer
+    contributions             = true
+
+# Permalinks
+[permalinks]
+  blog                        = "/blog/:year/:month/:day/:title/"
+  portfolio                   = "/portfolio/:year/:month/:day/:title/"
+
+# Author
+[author]
+    name                      = "Frances Coronel"
+    copyright                 = "©️ FVCproductions"
+
+# Menu
+# name - name of menu item
+# url - route of menu item (can be external)
+# identifier - Font Awesome Icon you want shown
+
+# Mobile Menu
+# Shown on Mobile
+# Hidden on Desktop
+[[menu.mobile]]
+    name                      = "GitHub"
+    url                       = "https://github.com/fvcproductions/hugoma-theme"
+    identifier                = "fab fa-lg fa-github"
+[[menu.mobile]]
+    name                      = "Twitter"
+    url                       = "https://twitter.com/fvcproductions"
+    identifier                = "fab fa-lg fa-twitter"
+
+# Desktop Menu (Right)
+# Shown on Desktop
+# Hidden on Mobile
+[[menu.right]]
+    name                      = "GitHub"
+    url                       = "https://github.com/fvcproductions/hugoma-theme"
+    identifier                = "fab fa-lg fa-github"
+[[menu.right]]
+    name                      = "Twitter"
+    url                       = "https://twitter.com/fvcproductions"
+    identifier                = "fab fa-lg fa-twitter"
+
+# Desktop Menu (Left)
+# Turns into hamburger menu on mobile
+[[menu.left]]
+    name                      = "About 😊"
+    url                       = "/about/"
+[[menu.left]]
+    name                      = "Blog 📝"
+    url                       = "/blog/"
+[[menu.left]]
+    name                      = "Contact 📥"
+    url                       = "/contact/"
+[[menu.left]]
+    name                      = "Portfolio 💼"
+    url                       = "/portfolio/"
+

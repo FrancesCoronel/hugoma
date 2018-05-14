@@ -1,0 +1,4 @@
+<!-- Check for banner image-->
+{{ if .Params.banner }} {{ partial "hero/image.html" . }}
+<!-- Else, go with gradient banner -->
+{{ else }} {{ partial "hero/gradient.html" . }} {{ end }}

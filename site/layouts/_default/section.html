@@ -1,0 +1,12 @@
+{{ define "main" }}
+<!-- Banner -->
+{{ partial "hero/index.html" . }}
+<!-- Content -->
+<section class="section {{ if .Params.banner }}pt-sm{{ end }}">
+  <div class="container">
+    {{ partial "content.html" . }}
+    <!-- Children Pages -->
+    {{ partial "children.html" . }}
+  </div>
+</section>
+{{ end }}

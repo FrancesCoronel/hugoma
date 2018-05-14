@@ -1,0 +1,15 @@
+{{ if .Content }}
+<div class="content">
+  {{ .Content }}
+  <!-- Taxonomy -->
+  {{ partial "taxonomy.html" . }}
+  <!-- Single Pages - Contribute -->
+  {{ if .IsPage }}
+  <!-- Share -->
+  <hr> {{ partial "share.html" . }}
+  <!-- Comment -->
+  <hr> {{ partial "comment.html" . }}
+  <!-- Contribute -->
+  <hr> {{ partial "contribute.html" . }} {{ end }}
+</div>
+{{ end }}

@@ -1,0 +1,18 @@
+<footer class="footer">
+  <div class="container is-fluid">
+    <div class="column">
+      <!-- Copyright -->
+      <div class="content has-text-centered">
+        <p>
+          <a href="/" target="_blank" rel="noopen">{{ .Site.Title }}</a>{{ with .Site.Params.copyright }} by
+          <a href="https://fvcproductions.com" target="_blank" rel="noopen">{{ . }}</a>{{ end }}
+        </p>
+        <p>
+          <i title="Copyright" class="fas fa-copyright mr-sm"></i>
+          <!-- Year -->
+          {{ with .Site.Params.year }} {{ . }} {{ end }} to {{ now.Year }}
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>

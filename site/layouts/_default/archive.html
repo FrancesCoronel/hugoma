@@ -1,0 +1,51 @@
+{{ define "main" }}
+<!-- Begin Main -->
+<!-- Banner -->
+{{ partial "hero/index.html" . }}
+<!-- Content -->
+<section class="section page {{ if .Params.banner }}pt-sm{{ end }}">
+  <div class="container">
+    {{ partial "content.html" . }}
+    <div class="content">
+      <!-- Range -->
+      {{ range .Site.RegularPages.GroupByDate "2006" }}
+      <!-- Line Separator - Year -->
+      <!-- Check for No Date -->
+      {{ if not (eq .Key "0001") }}
+      <!-- Year -->
+      <h2>{{ .Key }}</h2>
+      <!-- Begin - Range - Month -->
+      {{ range .Pages.GroupByDate "January" }}
+      <!-- Month -->
+      <h3>{{ .Key }}</h3>
+      <!-- List -->
+      <ul>
+        <!-- Begin - Range - Pages -->
+        {{ range .Pages }}
+        <!-- List Item -->
+        <li>
+          <!-- Date -->
+          <span class="mr-1">{{ dateFormat " 02 " .Date }}</span>
+          <!-- Title -->
+          <a href="{{ .RelPermalink }} ">{{ .Title }}</a>
+        </li>
+        {{ end }}
+        <!-- End - Range - Pages -->
+      </ul>
+      {{ end }}
+      <!-- End - Range - Month -->
+      {{ end }}
+      <!-- End - Range - Year -->
+      {{ end }}
+      <!-- End Message -->
+      <!-- Line Break -->
+      <hr>
+      <!-- End Message -->
+      <h3>
+        That's the end, folks! 🎉
+      </h3>
+    </div>
+  </div>
+</section>
+<!-- End Main -->
+{{ end }}
