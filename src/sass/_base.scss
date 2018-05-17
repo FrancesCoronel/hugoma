@@ -3,6 +3,11 @@ body {
   word-wrap: break-word;
 }
 
+a,
+a.navbar-item:hover {
+  color: #1C52A6;
+}
+
 a {
   &.navbar-item.is-hidden-mobile.icon {
     &:hover {

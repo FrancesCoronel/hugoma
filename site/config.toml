@@ -14,7 +14,7 @@ pygmentsCodefencesGuessSyntax = true
 pygmentsStyle                 = "manni"
 
 # Internal Templates
-# googleAnalytics             = ""
+googleAnalytics               = "UA-63190978-3"
 disqusShortname               = "fvcproductions"
 
 # RSS

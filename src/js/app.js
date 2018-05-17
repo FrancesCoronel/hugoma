@@ -1,15 +1,16 @@
-// Font Awesome
-require("@fortawesome/fontawesome");
-require("@fortawesome/fontawesome-free-solid");
-require("@fortawesome/fontawesome-free-brands");
-
 // Twemoji
 import twemoji from "twemoji";
 
 twemoji.parse(document.body, {
+  base: "https://twitter.github.io/twemoji/2/",
   folder: "svg",
-  ext: ".svg"
+  ext: ".svg",
 });
+
+// Font Awesome
+require("@fortawesome/fontawesome");
+require("@fortawesome/fontawesome-free-solid");
+require("@fortawesome/fontawesome-free-brands");
 
 // The following code is based off a toggle menu by @Bradcomp
 // https://gist.github.com/Bradcomp/a9ef2ef322a8e8017443b626208999c1
