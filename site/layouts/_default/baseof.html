@@ -13,7 +13,7 @@
   <!-- Twemoji -->
   <link rel="dns-prefetch" href="https://twemoji.maxcdn.com">
   <!-- Google Analytics -->
-  <!-- <link rel="dns-prefetch" href="https://google-analytics.com"> -->
+  <link rel="dns-prefetch" href="https://google-analytics.com">
   <!-- Preload -->
   <link rel="preload" href="/assets/css/styles.css" as="style">
 </head>
@@ -27,19 +27,38 @@
   <!-- Scripts -->
   <!-- Custom JS -->
   <script src="/assets/js/app.js"></script>
-  <!-- Service Worker -->
+  <!-- OneSignal Web Push Notifications & Service Worker Registration-->
+  <script async src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"></script>
   <script>
-    // if ('serviceWorker' in navigator) {
-    //   window.addEventListener('load', () => {
-    //     navigator.serviceWorker.register('/sw.js').then(registration => {
-    //       console.info('The service worker was registered! 🎉', registration);
-    //     }).catch(registrationError => {
-    //       console.error('The service worker registration failed. 😭️', registrationError);
-    //     });
-    //   });
-    // }
+    // OneSignal
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(function () {
+      OneSignal.init({
+        appId: "e64fce8d-6d54-4434-8b76-3fde80e6bdf1",
+      });
+    });
+    // Service Worker
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').then(registration => {
+          console.info('The service worker was registered! 🎉', registration);
+        }).catch(registrationError => {
+          console.error('The service worker registration failed. 😭️', registrationError);
+        });
+      });
+    }
 
   </script>
+  <style>
+    #onesignal-popover-container #onesignal-popover-dialog .popover-button.primary {
+      background: #253137 !important;
+    }
+
+    #onesignal-popover-container #onesignal-popover-dialog .popover-button.secondary {
+      color: #253137 !important;
+    }
+
+  </style>
 </body>
 
 </html>
