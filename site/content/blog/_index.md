@@ -1,7 +1,7 @@
 ---
 title: Blog 📝️
 description: My thoughts and ideas.
-banner: https://i.imgur.com/85KFCCP.jpg
+banner: /assets/img/home/blog.webp
 url: /blog/
 ---
 

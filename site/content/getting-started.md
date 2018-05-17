@@ -1,7 +1,7 @@
 ---
 title: Getting Started 🌟️
 description: The nuts and bolts for incorporating this Hugo theme.
-banner: https://i.imgur.com/mGA3X7m.png
+banner: /assets/img/home/getting-started.webp
 url: /getting-started/
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Archive 🕒️
 description: The past has been revealed.
-banner: https://i.imgur.com/3UE5Zwr.jpg
+banner: /assets/img/home/archive.webp
 layout: "archive"
 ---

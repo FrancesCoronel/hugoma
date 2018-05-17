@@ -1,7 +1,7 @@
 ---
 title: About 😊
 description: Learn about the person behind this website.
-banner: https://i.imgur.com/8o2Nhyo.jpg
+banner: /assets/img/home/about.webp
 url: /about/
 ---
 

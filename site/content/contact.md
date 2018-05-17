@@ -1,7 +1,7 @@
 ---
 title: Contact 📨️
 description: Get in touch with me!
-banner: https://i.imgur.com/0n5zqiA.jpg
+banner: /assets/img/home/contact.webp
 url: /contact/
 aliases:
   - /contact-me/

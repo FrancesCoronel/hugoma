@@ -1,7 +1,7 @@
 ---
 title: Portfolio 💼
 description: Showcasing some awesome work
-banner: https://i.imgur.com/D4dPpG2.jpg
+banner: /assets/img/home/portfolio.webp
 url: /portfolio/
 ---
 
