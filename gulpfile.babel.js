@@ -48,7 +48,7 @@ gulp.task("minify", () =>
         minifyCSS: true,
         minifyJS: true,
         removeComments: true,
-        useShortDoctype: true
+        useShortDoctype: true,
       })
     )
     .pipe(
@@ -56,12 +56,12 @@ gulp.task("minify", () =>
         skipLarger: true,
         mode: 0,
         quality: 11,
-        lgblock: 0
+        lgblock: 0,
       })
     )
     .pipe(
       gzip({
-        skipGrowingFiles: true
+        skipGrowingFiles: true,
       })
     )
     .pipe(gulp.dest("./dist"))
@@ -73,7 +73,7 @@ gulp.task("sass", () =>
     .src("./src/sass/styles.scss")
     .pipe(
       sass({
-        outputStyle: "compressed"
+        outputStyle: "compressed",
       }).on("error", sass.logError)
     )
     .pipe(postcss([autoprefixer(), cssnano(), csso()]))
@@ -112,7 +112,7 @@ gulp.task("js", () => {
       "[webpack]",
       stats.toString({
         colors: true,
-        progress: true
+        progress: true,
       })
     );
     browserSync.reload();
@@ -123,8 +123,8 @@ gulp.task("js", () => {
 gulp.task("server", ["hugo", "sass", "js", "img", "static"], () => {
   browserSync.init({
     server: {
-      baseDir: "./dist"
-    }
+      baseDir: "./dist",
+    },
   });
   watch("./src/sass/**/*.scss", () => {
     gulp.start(["sass"]);
@@ -148,7 +148,7 @@ function buildSite(cb, options, environment = "development") {
   const args = options ? hugoArgsDefault.concat(options) : hugoArgsDefault;
   process.env.NODE_ENV = environment;
   return spawn(hugoBin, args, {
-    stdio: "inherit"
+    stdio: "inherit",
   }).on("close", (code) => {
     if (code === 0) {
       browserSync.reload();

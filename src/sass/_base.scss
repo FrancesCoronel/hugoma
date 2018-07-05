@@ -1,14 +1,16 @@
 body {
-  font-size: 20px;
+  font-size: $font-size;
   word-wrap: break-word;
 }
 
-a,
-a.navbar-item:hover {
-  color: #1C52A6;
-}
-
 a {
+  color: $links;
+  &.navbar-item {
+    &:hover {
+      color: $links;
+      background-color: #eeeeee;
+    }
+  }
   &.navbar-item.is-hidden-mobile.icon {
     &:hover {
       background-color: white;
@@ -24,4 +26,15 @@ a {
 
 iframe {
   width: 100%;
+}
+
+form,
+label,
+textarea,
+input,
+span,
+button,
+pre code,
+.pagination {
+  font-size: $font-size !important;
 }

@@ -1,20 +1,22 @@
 <!-- Date -->
 {{ if not .PublishDate.IsZero }}
 <p>
-  <i title="Publish Date" class="fas fa-calendar-check fa-lg mr-1"></i> {{ dateFormat "Monday - January 2, 2006" .Date }}
+  📆 {{ dateFormat "Monday - January 2, 2006" .Date }}
 </p>
 {{ end }}
 <!-- Reading Time & Word Count -->
 {{ if .ReadingTime }} {{ if .WordCount }}
 <p>
-  <i title="Reading Time" class="fas fa-clock fa-lg mr-1"></i>
-  {{ .ReadingTime }} minute read ∙ {{ .WordCount }} words
+  ⏰ {{ .ReadingTime }} minute read ∙ {{ .WordCount }} words
 </p>
 {{ end }} {{ end }}
 <!-- External Link -->
 {{ with .Params.link }}
 <p>
-  <i title="External Link" class="fas fa-external-link-square-alt fa-lg mr-1"></i>
+  ↗
   <a class="external-link" href="{{ . }}" target="_blank" rel="noopener">{{ . }}</a>
 </p>
+{{ end }}
+{{ if .Content }}
+<hr>
 {{ end }}

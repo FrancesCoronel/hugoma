@@ -1,0 +1,42 @@
+<hr>
+<section class="section section-share">
+  <h1>🌐️ Share</h1>
+  <!-- Twitter -->
+  <div class="social-icons mt-2">
+    <a href="//twitter.com/intent/tweet?url={{ .Permalink }}&via={{ .Site.Social.twitter }}&text={{ .Title }}" target="_blank" rel="noopener" class="fa-twitter">
+      {{ partial "icons/twitter.html" . }}
+    </a>
+    <!-- Facebook -->
+    <a href="//www.facebook.com/sharer.php?u={{ .Permalink }}" target="_blank" rel="noopener" class="fa-facebook">
+      {{ partial "icons/facebook.html" . }}
+    </a>
+    <!-- LinkedIn -->
+    <a href="//www.linkedin.com/shareArticle?mini=true&url={{ .Permalink | safeURL }}&title={{ .Title }}&summary={{ .Summary }}&source={{ .Site.Title }}" target="_blank" rel="noopener" class="fa-linkedin">
+      {{ partial "icons/linkedin.html" . }}
+    </a>
+    <!-- Pinterest -->
+    <a href="//pinterest.com/pin/create/bookmarklet/?media={{ .Params.banner }}&url={{ .Permalink | safeURL }}&description={{ .Title }}" target="_blank" rel="noopener" class="fa-pinterest">
+      {{ partial "icons/pinterest.html" . }}
+    </a>
+    <!-- Google+ -->
+    <a href="//plus.google.com/share?url={{ .Permalink | safeURL }}" target="_blank" rel="noopener" class="fa-google-plus">
+      {{ partial "icons/google-plus.html" . }}
+    </a>
+    <!-- Reddit -->
+    <a href="//reddit.com/submit?url={{ .Permalink | safeURL }}&title={{ .Title }}" target="_blank" rel="noopener" class="fa-reddit">
+      {{ partial "icons/reddit.html" . }}
+    </a>
+    <!-- Hacker News -->
+    <a href="//news.ycombinator.com/submitlink?u={{ .Permalink | safeURL }}&t={{ .Title }}" target="_blank" rel="noopener" class="fa-reddit">
+      {{ partial "icons/hacker-news.html" . }}
+    </a>
+    <!-- Email -->
+    <a href="mailto:?subject=Check out this work by {{ .Site.Title }}&body={{ .Permalink | safeURL }}" target="_blank" rel="noopener" class="fa-email">
+      {{ partial "icons/email.html" . }}
+    </a>
+    <!-- Print -->
+    <!-- <a href="javascript:window.print()" target="_blank" rel="noopener" class="fa-print">
+      {{ partial "icons/print.html" . }}
+    </a> -->
+  </div>
+</section>

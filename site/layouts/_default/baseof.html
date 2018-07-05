@@ -16,6 +16,8 @@
   <link rel="dns-prefetch" href="https://google-analytics.com">
   <!-- Preload -->
   <link rel="preload" href="/assets/css/styles.css" as="style">
+  <!-- Twemoji -->
+  <script src="https://twemoji.maxcdn.com/2/twemoji.min.js?11.0"></script>
 </head>
 
 <body>
@@ -38,6 +40,7 @@
       });
     });
     // Service Worker
+    /**
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('/sw.js').then(registration => {
@@ -46,7 +49,7 @@
           console.error('The service worker registration failed. 😭️', registrationError);
         });
       });
-    }
+    }**/
 
   </script>
   <style>
@@ -57,7 +60,6 @@
     #onesignal-popover-container #onesignal-popover-dialog .popover-button.secondary {
       color: #253137 !important;
     }
-
   </style>
 </body>
 

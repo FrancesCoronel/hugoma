@@ -17,6 +17,10 @@ pygmentsStyle                 = "manni"
 googleAnalytics               = "UA-63190978-3"
 disqusShortname               = "fvcproductions"
 
+# Pagination
+Paginate                      = 12
+# PaginatePath                  = "adventures"
+
 # RSS
 [outputs]
     home                      = ["HTML", "AMP", "RSS"]
@@ -61,23 +65,31 @@ disqusShortname               = "fvcproductions"
 [[menu.mobile]]
     name                      = "GitHub"
     url                       = "https://github.com/fvcproductions/hugoma-theme"
-    identifier                = "fab fa-lg fa-github"
+    identifier                = "github"
 [[menu.mobile]]
     name                      = "Twitter"
     url                       = "https://twitter.com/fvcproductions"
-    identifier                = "fab fa-lg fa-twitter"
+    identifier                = "twitter"
+# [[menu.mobile]]
+#     name                      = "LinkedIn"
+#     url                       = "https://linkedin.com/in/fvcproductions"
+#     identifier                = "linkedin"
 
 # Desktop Menu (Right)
 # Shown on Desktop
 # Hidden on Mobile
-[[menu.right]]
-    name                      = "GitHub"
-    url                       = "https://github.com/fvcproductions/hugoma-theme"
-    identifier                = "fab fa-lg fa-github"
-[[menu.right]]
-    name                      = "Twitter"
-    url                       = "https://twitter.com/fvcproductions"
-    identifier                = "fab fa-lg fa-twitter"
+# [[menu.right]]
+#     name                      = "GitHub"
+#     url                       = "https://github.com/fvcproductions/hugoma-theme"
+#     identifier                = "github"
+# [[menu.right]]
+#     name                      = "Twitter"
+#     url                       = "https://twitter.com/fvcproductions"
+#     identifier                = "twitter"
+# [[menu.right]]
+#     name                      = "LinkedIn"
+#     url                       = "https://linkedin.com/in/fvcproductions"
+#     identifier                = "linkedin"
 
 # Desktop Menu (Left)
 # Turns into hamburger menu on mobile

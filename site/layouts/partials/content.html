@@ -5,11 +5,21 @@
   {{ partial "taxonomy.html" . }}
   <!-- Single Pages - Contribute -->
   {{ if .IsPage }}
-  <!-- Share -->
-  <hr> {{ partial "share.html" . }}
-  <!-- Comment -->
-  <hr> {{ partial "comment.html" . }}
-  <!-- Contribute -->
-  <hr> {{ partial "contribute.html" . }} {{ end }}
+  <div class="content-footer mt-2">
+    <!-- Share -->
+    {{ partial "content-footer/share.html" . }}
+    <!-- Donate -->
+    {{ partial "content-footer/donate.html" . }}
+    <!-- Subscribe -->
+    {{ partial "content-footer/subscribe.html" . }}
+    <!-- Comment -->
+    {{ partial "content-footer/comment.html" . }}
+    <!-- Contribute -->
+    {{ partial "content-footer/contribute.html" . }}
+    <!-- Related -->
+    {{ partial "content-footer/related.html" . }}
+  </div>
+  <!-- End Page -->
+  {{ end }}
 </div>
 {{ end }}

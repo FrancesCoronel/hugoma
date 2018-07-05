@@ -11,6 +11,12 @@
   }
 }
 
+@media print, screen and (max-width: 768px) {
+  .hero.is-large .hero-body {
+    padding: 10rem 0;
+  }
+}
+
 .background-image {
   -webkit-background-size: 100%;
   -moz-background-size: 100%;

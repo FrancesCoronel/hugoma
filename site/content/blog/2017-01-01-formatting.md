@@ -46,7 +46,7 @@ test.. test... test..... test?..... test!....
 
 ## Lists
 
-Unordered
+### Unordered
 
 * Create a list by starting a line with `+`, `-`, or `*`
 * Sub-lists are made by indenting 2 spaces:
@@ -56,11 +56,16 @@ Unordered
     * Nulla volutpat aliquam velit
 * Very easy!
 
-Ordered
+### Ordered
 
 1. This little piggy went to the store
 2. Consectetur adipiscing elit
 3. Integer molestie lorem at massa
+
+### Checklist
+
+- [ ] Not checked
+- [x] Checked
 
 ## Code
 
@@ -105,8 +110,6 @@ console.log(foo(5));
 
 ## Images
 
-![Minion](https://octodex.github.com/images/minion.png)
-
 ![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
 
 Like links, Images also have a footnote style syntax
@@ -116,6 +119,10 @@ Like links, Images also have a footnote style syntax
 With a reference later in the document defining the URL location:
 
 [id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
+
+## Image with Link
+
+[![Minion](https://octodex.github.com/images/minion.png)](https://octodex.github.com/images/minion.png)
 
 ## Emoji
 

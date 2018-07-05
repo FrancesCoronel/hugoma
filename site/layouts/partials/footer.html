@@ -1,16 +1,36 @@
 <footer class="footer">
   <div class="container is-fluid">
     <div class="column">
+          <div class="content has-text-centered social-icons">
+          <!-- GitHub -->
+          <a href="https://github.com/fvcproductions" target="_blank" rel="noopener" class="fa-github">
+            {{ partial "icons/github.html" . }}
+          </a>
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/fvcproductions" target="_blank" rel="noopener" class="fa-linkedin">
+            {{ partial "icons/linkedin.html" . }}
+          </a>
+          <!-- SlideShare -->
+          <a href="https://slideshare.net/fvcproductions" target="_blank" rel="noopener" class="fa-slideshare">
+            {{ partial "icons/slideshare.html" . }}
+          </a>
+          <!-- RSS -->
+          <a href="/feed.xml" target="_blank" rel="noopener" class="fa-rss">
+            {{ partial "icons/rss.html" . }}
+          </a>
+          <!-- Twitter -->
+          <a href="https://twitter.com/fvcproductions" target="_blank" rel="noopener" class="fa-twitter">
+            {{ partial "icons/twitter.html" . }}
+          </a>
+          <!-- YouTube -->
+          <a href="https://youtube.com/+fvcproductions2013" target="_blank" rel="noopener" class="fa-youtube">
+            {{ partial "icons/youtube.html" . }}
+          </a>
+        </div>
       <!-- Copyright -->
-      <div class="content has-text-centered">
+      <div class="content has-text-centered mt-2">
         <p>
-          <a href="/" target="_blank" rel="noopener">{{ .Site.Title }}</a>{{ with .Site.Params.copyright }} by
-          <a href="https://fvcproductions.com" target="_blank" rel="noopener">{{ . }}</a>{{ end }}
-        </p>
-        <p>
-          <i title="Copyright" class="fas fa-copyright mr-sm"></i>
-          <!-- Year -->
-          {{ with .Site.Params.year }} {{ . }} {{ end }} to {{ now.Year }}
+          ©️ <a href="/" target="_blank" rel="noopener">{{ .Site.Title }}</a> {{ with .Site.Params.year }} {{ . }} {{ end }} to {{ now.Year }}
         </p>
       </div>
     </div>

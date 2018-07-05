@@ -14,11 +14,11 @@ aliases:
   <form method="POST" action="https://formspree.io/hello@fvcproductions.com">
     <input type="hidden" name="_subject" value="Hugoma Theme - New Contact Message 📥" />
     <div class="field">
-      <label class="label">Your name</label>
+      <label class="label">Name</label>
       <div class="control has-icons-left">
         <input class="input" autocomplete="on" type="text" name="name" placeholder="Frances Coronel">
         <span class="icon is-small is-left">
-          <i class="fas fa-user"></i>
+          ✒️
         </span>
       </div>
     </div>
@@ -27,12 +27,12 @@ aliases:
       <div class="control has-icons-left">
         <input class="input" autocomplete="on" type="email" name="email" placeholder="hello@fvcproductions.com">
         <span class="icon is-small is-left">
-          <i class="fas fa-envelope"></i>
+          ✉️
         </span>
       </div>
     </div>
     <div class="field">
-      <label class="label">Your message</label>
+      <label class="label">Message</label>
       <div class="control">
         <textarea class="textarea" spellcheck="true" rows="5" name="message" id="message" placeholder="I want to contact you about..."></textarea>
       </div>
