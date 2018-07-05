@@ -1,15 +1,23 @@
 <!-- Date -->
 {{ if not .PublishDate.IsZero }}
 <p>
-  📆 {{ dateFormat "Monday - January 2, 2006" .Date }}
+  📅️ Published {{ dateFormat "Monday - January 2, 2006" .Date }}
+</p>
+<!-- Last Presented -->
+{{ if .Params.lastpresented }}
+<p>
+  📆️ Last presented {{ dateFormat "Monday - January 2, 2006" .Params.lastpresented }}
 </p>
 {{ end }}
+{{ end }}
 <!-- Reading Time & Word Count -->
+{{ if not .Params.noTimeEstimate }}
 {{ if .ReadingTime }} {{ if .WordCount }}
 <p>
   ⏰ {{ .ReadingTime }} minute read ∙ {{ .WordCount }} words
 </p>
 {{ end }} {{ end }}
+{{ end }}
 <!-- External Link -->
 {{ with .Params.link }}
 <p>

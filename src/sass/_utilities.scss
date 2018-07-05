@@ -27,3 +27,26 @@
 .pb-sm {
   padding-bottom: .5em;
 }
+
+.return-to-top {
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  bottom: 1em;
+  color: $secondary;
+  display: none;
+  font-size: 1.5em;
+  position: fixed;
+  right: 1em;
+  text-decoration: none;
+  transition: all .5s ease;
+  z-index: 5000;
+  &:hover {
+    color: $primary;
+  }
+}
+
+.return-to-top-show {
+  display: block;
+}

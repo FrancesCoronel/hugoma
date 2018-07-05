@@ -6,6 +6,7 @@
 <section class="section page {{ if .Params.banner }}pt-sm{{ end }}">
   <div class="container">
     {{ partial "content.html" . }}
+    <hr>
     <div class="content">
       <!-- Range -->
       {{ range .Site.RegularPages.GroupByDate "2006" }}

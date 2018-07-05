@@ -56,27 +56,9 @@ It is set up to use [PostCSS](http://postcss.org/) and [Babel](https://babeljs.i
 └── webpack.config.js   // Webpack config
 ```
 
-## Theme Screenshots
-
-> Home Page
-
-![Screenshot 1](https://i.imgur.com/Ov53PDR.png)
-
-> Single Page - About
-
-![Screenshot 2](https://i.imgur.com/teLtnI0.png)
-
-> Section Page - Portfolio
-
-![Screenshot 3](https://i.imgur.com/vmE3WY2.png)
-
-> It's mobile friendly!
-
-![Screenshot 4](https://i.imgur.com/1qNzMGW.png)
-
 ## Live Action
 
-* Website for [Techqueria.org](http://techqueria.org/)
+- Website for [Techqueria.org](http://techqueria.org/)
 
 ## Contributing
 
@@ -98,7 +80,7 @@ More details can be found at this project's [code of conduct](.github/CODE_OF_CO
 
 ## Credits
 
-* [FVCproductions](https://github.com/fvcproductions) 🍓🍫
-* [Bulma](https://bulma.io/)
-* [Hugo](https://gohugo.io/)
-* [Victor Hugo Boilerplate by Netlify](https://github.com/netlify/victor-hugo)
+- [FVCproductions](https://github.com/fvcproductions) 🍓🍫
+- [Bulma](https://bulma.io/)
+- [Hugo](https://gohugo.io/)
+- [Victor Hugo Boilerplate by Netlify](https://github.com/netlify/victor-hugo)

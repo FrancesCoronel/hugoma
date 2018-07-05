@@ -38,3 +38,14 @@ pre code,
 .pagination {
   font-size: $font-size !important;
 }
+
+table {
+  font-size: 1em;
+  margin: 2em 0;
+  text-align: center;
+  width: 100%;
+  overflow-x: auto;
+  @media screen and (max-width: $tablet) {
+    display: block;
+  }
+}
