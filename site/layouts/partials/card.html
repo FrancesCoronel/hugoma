@@ -1,9 +1,5 @@
 <!-- Checking for external link -->
-{{ if .Params.link }}
-<a href="{{ .Params.link }}" target="_blank" rel="noopener">
-  {{ else }}
-  <a href="{{ .RelPermalink }}">
-    {{end}}
+<a {{ if .Params.link }}href="{{ .Params.link }}" target="_blank" rel="noopener"{{ else }}href="{{ .RelPermalink }}"{{ end }}>
     <div class="card card-equal-height">
       <!-- Banner -->
       {{ if .Params.banner }}
@@ -27,7 +23,7 @@
           {{ if not .PublishDate.IsZero }}
           <!-- Date -->
           <p class="mt-1 subtitle">
-            <time datetime="{{ dateFormat " 2006-01-02 " .Date }}">
+            <time datetime="{{ dateFormat "2006-01-02" .Date }}">
               {{ dateFormat "January 2, 2006" .Date }}
             </time>
           </p>
@@ -38,7 +34,7 @@
       <!-- Date -->
       <!-- {{ if not .PublishDate.IsZero }}
       <footer class="card-footer">
-        <time datetime="{{ dateFormat " 2006-01-02 " .Date }}">
+        <time datetime="{{ dateFormat "2006-01-02" .Date }}">
           {{ dateFormat "January 2, 2006" .Date }}
         </time>
       </footer>

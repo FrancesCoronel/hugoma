@@ -1,15 +1,23 @@
 ---
-title: "Banner Image"
-description: "This has a banner image defined in the front matter."
+title: "Categories & Tags"
+description: "This post has categories & tags defined."
 date: 2018-03-08
 banner: /assets/img/home/getting-started.webp
 categories:
   - banner
   - image
   - test
+  - category1
+  - weird category
 tags:
   - banner image
   - front matter
+  - tag1
+  - tag2
+  - tag3
+  - tag4
+  - tag5
+  - tag6
 ---
 
 I was thinking to myself, why not create a Hugo theme?

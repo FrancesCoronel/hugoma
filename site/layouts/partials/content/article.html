@@ -1,0 +1,25 @@
+<a class="reset" {{ if .Params.link }}href="{{ .Params.link }}" target="_blank" rel="noopener" {{ else }}href="{{ .RelPermalink }}" {{ end }}>
+  <div class="box card card-equal-height">
+    <article class="media">
+      <div class="media-content">
+        <div class="content">
+          <strong>{{ .Title }}</strong>
+          <br>
+          <small>
+            {{ if not .PublishDate.IsZero }}
+            <time datetime="{{ dateFormat " 2006-01-02 " .Date }}">
+              {{ dateFormat "Monday - January 2, 2006" .Date }}
+            </time>
+            {{ end }}
+          </small>
+          <br> {{ if .Description }} {{ .Description | truncate 100 | safeHTML }} {{ else }} {{ .Summary | truncate 100 | safeHTML }} {{ end }}
+        </div>
+        {{ if .Params.tags }}
+        <div class="mt-sm">
+          {{ partial "content/tags/tags.html" . }}
+        </div>
+        {{ end }}
+      </div>
+    </article>
+  </div>
+</a>

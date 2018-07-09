@@ -1,10 +1,10 @@
 {{ define "main" }}
 <!-- Banner -->
-{{ partial "hero/index.html" . }}
+{{ partial "hero/_index.html" . }}
 <!-- Return to Top -->
 {{ partial "return-to-top.html" . }}
 <!-- Content -->
-<section class="section page {{ if .Params.banner }}pt-sm{{ end }}">
+<section class="section page pt-sm">
   <div class="container">
     <!-- Content -->
     {{ partial "content.html" . }}

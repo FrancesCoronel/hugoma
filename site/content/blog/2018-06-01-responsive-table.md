@@ -1,8 +1,12 @@
 ---
 title: "Responsive Tables"
-description: "Cause everybody likes tables!"
+description: "Cause everybody likes tables! Some really long text omg it's so long how will it fit dogge doge dodge"
 date: 2018-06-01
 noTimeEstimate: true
+banner: https://i.imgur.com/ehf21vT.png
+tags:
+  - responsive
+  - tables
 ---
 
 | Why                                                                                                       | Who             | Method      | Hours | Date             |

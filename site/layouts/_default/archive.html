@@ -1,7 +1,7 @@
 {{ define "main" }}
 <!-- Begin Main -->
 <!-- Banner -->
-{{ partial "hero/index.html" . }}
+{{ partial "hero/_index.html" . }}
 <!-- Content -->
 <section class="section page {{ if .Params.banner }}pt-sm{{ end }}">
   <div class="container">
@@ -26,7 +26,7 @@
         <!-- List Item -->
         <li>
           <!-- Date -->
-          <span class="mr-1">{{ dateFormat " 02 " .Date }}</span>
+          <span class="mr-1">{{ dateFormat "02" .Date }}</span>
           <!-- Title -->
           <a href="{{ .RelPermalink }} ">{{ .Title }}</a>
         </li>

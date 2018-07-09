@@ -12,7 +12,7 @@ aliases:
 
 <section class="contact-form">
   <form method="POST" action="https://formspree.io/hello@fvcproductions.com">
-    <input type="hidden" name="_subject" value="Hugoma Theme - New Contact Message 📥" />
+    <input type="hidden" name="_subject" value="Hugoma Theme - New Contact Message">
     <div class="field">
       <label class="label">Name</label>
       <div class="control has-icons-left">
@@ -52,7 +52,7 @@ This form uses [Formspree](https://formspree.io/) which doesn't require anything
 ```html
 <section class="contact-form">
   <form method="POST" action="https://formspree.io/hello@fvcproductions.com">
-    <input type="hidden" name="_subject" value="Hugoma Theme - New Contact Message 📥" />
+    <input type="hidden" name="_subject" value="Hugoma Theme - New Contact Message">
     <div class="field">
       <label class="label">Your name</label>
       <div class="control has-icons-left">

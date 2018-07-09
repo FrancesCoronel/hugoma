@@ -1,4 +1,7 @@
 .content {
+  h1, h2, h3, h4, h5, h6, .card-header-title {
+    color: black;
+  }
   a {
     border-bottom-width: 1px;
     border-bottom-style: dotted;
@@ -9,23 +12,39 @@
       border-bottom-style: solid;
       border-bottom-color: black;
       img {
-        -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .25);
-        box-shadow: 0 0 20px rgba(0, 0, 0, .25);
+        @extend %image-shadow;
       }
       img.emoji {
         -webkit-box-shadow: none;
         box-shadow: none;
       }
     }
+    &.button {
+      border: 1px solid $button-border;
+    }
+    &.tag {
+      border-bottom: none;
+      color: white;
+      &:hover {
+        border-bottom: none;
+        text-decoration: underline;
+      }
+    }
+    &.reset {
+      border: none;
+      color: black;
+    }
   }
   img {
     @extend %image-shadow;
     display: block;
-    border-radius: _size(border-radius);
     border: 0;
     display: inline-block;
     position: relative;
     max-width: 100%;
+  }
+  figure {
+    margin: 0;
   }
   .section-taxonomy {
     h3 a {
@@ -59,4 +78,8 @@
       height: 50px !important;
     }
   }
+}
+
+.media-content {
+  color: black;
 }

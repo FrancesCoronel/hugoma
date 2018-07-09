@@ -41,11 +41,18 @@ pre code,
 
 table {
   font-size: 1em;
-  margin: 2em 0;
   text-align: center;
   width: 100%;
   overflow-x: auto;
   @media screen and (max-width: $tablet) {
     display: block;
   }
+}
+
+hr {
+  margin: 1rem 0;
+}
+
+.box {
+  border-radius: 0;
 }

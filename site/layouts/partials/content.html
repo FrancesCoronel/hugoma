@@ -2,22 +2,22 @@
 <div class="content">
   {{ .Content }}
   <!-- Taxonomy -->
-  {{ partial "taxonomy.html" . }}
+  {{ partial "content/taxonomy.html" . }}
   <!-- Single Pages - Contribute -->
   {{ if .IsPage }}
   <div class="content-footer mt-2">
     <!-- Share -->
-    {{ partial "content-footer/share.html" . }}
+    {{ partial "content/footer/share.html" . }}
     <!-- Donate -->
-    {{ partial "content-footer/donate.html" . }}
+    {{ partial "content/footer/donate.html" . }}
     <!-- Subscribe -->
-    {{ partial "content-footer/subscribe.html" . }}
+    {{ partial "content/footer/subscribe.html" . }}
     <!-- Comment -->
-    {{ partial "content-footer/comment.html" . }}
+    {{ partial "content/footer/comment.html" . }}
     <!-- Contribute -->
-    {{ partial "content-footer/contribute.html" . }}
+    {{ partial "content/footer/contribute.html" . }}
     <!-- Related -->
-    {{ partial "content-footer/related.html" . }}
+    {{ partial "content/footer/related.html" . }}
   </div>
   <!-- End Page -->
   {{ end }}

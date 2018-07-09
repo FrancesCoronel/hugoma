@@ -5,7 +5,7 @@
   {{ $pages := $paginator | union (.Sections) }}
   <!-- Looping -->
   {{ range $pages }}
-  <div class="column is-one-quarter">
+  <div class="column is-one-third">
     {{ partial "card.html" . }}
   </div>
   {{ end }}

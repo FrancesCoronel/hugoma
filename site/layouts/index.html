@@ -12,7 +12,24 @@
     </div>
   </div>
 </section>
-<!-- All Pages -->
+<!-- Latest & Greatest -->
+<section class="section">
+  <div class="container content">
+    <div class="has-text-centered mb-2">
+      <h2>🕒 Latest Posts</h2>
+    </div>
+    <div class="columns is-multiline">
+      {{ range first 4 $.Site.RegularPages.ByDate.Reverse }}
+      <div class="column is-half">
+        {{ partial "content/article.html" . }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+  </div>
+</section>
+<hr>
+<!-- Overview of all Pages -->
 <section class="section page">
   <div class="container">
     <div class="columns is-multiline">
