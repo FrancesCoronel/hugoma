@@ -8,13 +8,8 @@
     <!-- Left Icons -->
     <!-- Show only on mobile -->
     {{ range .Site.Menus.mobile }}
-    <a class="navbar-item is-hidden-desktop fa-{{ .Identifier }}" href="{{ .URL }}" target="_blank" rel="noopener">
-      {{ if .Identifier }}
-        {{ $identifier := .Identifier }}
-        {{ partial (printf "icons/%s.html" $identifier) }}
-      {{ else }}
-        {{ .Name }}
-      {{ end }}
+    <a class="navbar-item is-hidden-desktop fa-{{ .Identifier }}" href="{{ .URL }}" {{ if hasPrefix .URL "https://" }} target="_blank" rel="noopener" {{ end }}>
+      {{ if .Identifier }} {{ $identifier := .Identifier }} {{ partial (printf "icons/%s.html" $identifier) }} {{ else }} {{ .Name }} {{ end }}
     </a>
     {{ end }}
     <!-- Hamburger Menu -->
@@ -66,18 +61,11 @@
     <div class="navbar-end">
       <!-- Right Navbar Items (Icons) -->
       <!-- Hidden on Mobile -->
-      {{ if .Site.Menus.right }}
-        {{ range .Site.Menus.right }}
-        {{ $identifier := .Identifier }}
-        <a class="navbar-item is-hidden-mobile fa-{{ .Identifier }}" href="{{ .URL }}" target="_blank" rel="noopener">
-          {{ if .Identifier }}
-            {{ partial (printf "icons/%s.html" $identifier) }}
-          {{ else }}
-            {{ .Name }}
-          {{ end }}
-        </a>
-        {{ end }}
-      {{ end }}
+      {{ if .Site.Menus.right }} {{ range .Site.Menus.right }} {{ $identifier := .Identifier }}
+      <a class="navbar-item is-hidden-mobile fa-{{ .Identifier }}" href="{{ .URL }}" {{ if hasPrefix .URL "https://" }} target="_blank" rel="noopener" {{ end }}>
+        {{ if .Identifier }} {{ partial (printf "icons/%s.html" $identifier) }} {{ else }} {{ .Name }} {{ end }}
+      </a>
+      {{ end }} {{ end }}
     </div>
   </div>
 </nav>

@@ -39,10 +39,12 @@
       {{ $pages := $pages | union (.Site.Sections) }}
       <!-- Looping -->
       {{ range $pages.ByTitle }}
+      <!-- Filter -->
+      {{ if not (.Params.noHomePage) }}
       <div class="column is-one-third">
         {{ partial "card.html" . }}
       </div>
-      {{ end }}
+      {{ end }} {{ end }}
     </div>
   </div>
 </section>

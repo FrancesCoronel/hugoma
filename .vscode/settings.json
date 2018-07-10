@@ -1,6 +1,7 @@
 {
   "editor.fontSize": 18,
   "editor.tabSize": 2,
+  "prettier.tabWidth": 2,
   "editor.wordWrap": "on",
   "files.trimTrailingWhitespace": true,
   "markdown.extension.preview.autoShowPreviewToSide": false,

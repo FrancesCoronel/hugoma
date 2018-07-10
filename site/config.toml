@@ -91,18 +91,10 @@ preserveTaxonomyNames         = false
 # Desktop Menu (Right)
 # Shown on Desktop
 # Hidden on Mobile
-# [[menu.right]]
-#     name                    = "GitHub"
-#     url                     = "https://github.com/fvcproductions/hugoma-theme"
-#     identifier              = "github"
-# [[menu.right]]
-#     name                    = "Twitter"
-#     url                     = "https://twitter.com/fvcproductions"
-#     identifier              = "twitter"
-# [[menu.right]]
-#     name                    = "LinkedIn"
-#     url                     = "https://linkedin.com/in/fvcproductions"
-#     identifier              = "linkedin"
+[[menu.right]]
+    name                    = "Search"
+    url                     = "/search/"
+    identifier              = "search"
 
 # Desktop Menu (Left)
 # Turns into hamburger menu on mobile
