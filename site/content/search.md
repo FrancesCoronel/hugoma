@@ -4,6 +4,7 @@ noTimeEstimate: true
 noHomePage: true
 description: Enter your search term below.
 url: /search/
+noTimeEstimate: true
 ---
 
 <style>

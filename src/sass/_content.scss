@@ -1,6 +1,16 @@
 .content {
-  h1, h2, h3, h4, h5, h6, .card-header-title {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .card-header-title {
     color: black;
+  }
+  h2.card-header-title {
+    font-size: inherit;
+    margin-bottom: 0;
   }
   a {
     border-bottom-width: 1px;
@@ -50,6 +60,9 @@
     h3 a {
       border-bottom: none;
     }
+  }
+  .columns.is-multiline {
+    margin-top: 1em;
   }
 }
 

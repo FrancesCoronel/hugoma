@@ -3,6 +3,7 @@ title: About 😊
 description: Learn about the person behind this website.
 banner: /assets/img/home/about.webp
 url: /about/
+noTimeEstimate: true
 ---
 
 ![Hugoma Theme](https://i.imgur.com/mGA3X7m.png)

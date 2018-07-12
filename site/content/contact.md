@@ -2,6 +2,7 @@
 title: Contact 📨️
 description: Get in touch with me!
 banner: /assets/img/home/contact.webp
+noTimeEstimate: true
 url: /contact/
 aliases:
   - /contact-me/

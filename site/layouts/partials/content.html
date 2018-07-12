@@ -1,6 +1,8 @@
 {{ if .Content }}
 <div class="content">
   {{ .Content }}
+  <!-- Custom Pages -->
+  {{ partial "content/custom/_index.html" . }}
   <!-- Taxonomy -->
   {{ partial "content/taxonomy.html" . }}
   <!-- Single Pages - Contribute -->

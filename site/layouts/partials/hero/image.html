@@ -7,9 +7,12 @@
       <!-- Title -->
       <h1>{{ .Title }}</h1>
       <!-- Description -->
+      {{ if .Description }}
       <p>
         ℹ {{ .Description }}
       </p>
+      {{ end }}
+      <!-- Info -->
       {{ partial "hero/info.html" . }}
     </div>
   </div>

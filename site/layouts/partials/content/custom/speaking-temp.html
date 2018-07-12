@@ -1,14 +1,10 @@
 <div class="columns is-multiline">
-  <!-- Defining Pages -->
-  {{ $paginator := .Paginator.Pages }}
-  <!-- Union -->
-  {{ $pages := $paginator | union (.Sections) }}
-  <!-- Looping -->
-  {{ range $pages.ByDate.Reverse }}
+  {{ $paginator := .Paginate (where $.Site.RegularPages "Params.categories" "speaking" ) 5 }} {{ range $paginator.Pages.ByDate.Reverse }}
   <div class="column is-one-third">
     {{ partial "card.html" . }}
   </div>
   {{ end }}
+
 </div>
 <!-- Pagination -->
 <section class="section">

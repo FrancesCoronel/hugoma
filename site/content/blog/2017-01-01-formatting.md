@@ -2,6 +2,10 @@
 title: "Formatting"
 description: "All the Markdown you want!"
 date: 2017-01-01
+banner: /assets/img/home/getting-started.webp
+categories:
+  - talk
+  - upcoming
 ---
 
 # h1 Heading
