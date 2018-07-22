@@ -1,14 +1,13 @@
 {{ define "main" }}
 <!-- Banner -->
-{{ partial "hero/_index.html" . }}
-<!-- Return to Top -->
-{{ partial "return-to-top.html" . }}
-<!-- Content -->
+{{ partial "body/hero/_index.html" . }}
+<!-- Page -->
 <section class="section {{ if .Params.banner }}pt-sm{{ end }}">
   <div class="container">
-    {{ partial "content.html" . }}
-    <!-- Children Pages -->
-    {{ partial "children.html" . }}
+    <!-- Content -->
+    {{ partial "body/content/_index.html" . }}
+    <!-- Children -->
+    {{ partial "body/children/_index.html" . }}
   </div>
 </section>
 {{ end }}

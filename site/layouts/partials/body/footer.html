@@ -1,0 +1,39 @@
+<footer class="footer">
+  <div class="container is-fluid">
+    <div class="column">
+      <div class="content has-text-centered social-icons">
+        <!-- GitHub -->
+        <a href="https://github.com/fvcproductions" target="_blank" rel="noopener" class="fa-github">
+          {{ partial "body/icons/github.html" . }}
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/fvcproductions" target="_blank" rel="noopener" class="fa-linkedin">
+          {{ partial "body/icons/linkedin.html" . }}
+        </a>
+        <!-- SlideShare -->
+        <a href="https://slideshare.net/fvcproductions" target="_blank" rel="noopener" class="fa-slideshare">
+          {{ partial "body/icons/slideshare.html" . }}
+        </a>
+        <!-- RSS -->
+        <a href="/feed.xml" target="_blank" rel="noopener" class="fa-rss">
+          {{ partial "body/icons/rss.html" . }}
+        </a>
+        <!-- Twitter -->
+        <a href="https://twitter.com/fvcproductions" target="_blank" rel="noopener" class="fa-twitter">
+          {{ partial "body/icons/twitter.html" . }}
+        </a>
+        <!-- YouTube -->
+        <a href="https://youtube.com/+fvcproductions2013" target="_blank" rel="noopener" class="fa-youtube">
+          {{ partial "body/icons/youtube.html" . }}
+        </a>
+      </div>
+      <!-- Copyright -->
+      <div class="content has-text-centered mt-2">
+        <p>
+          ©️
+          <a href="/" target="_blank" rel="noopener">{{ .Site.Title }}</a> {{ with .Site.Params.year }} {{ . }} {{ end }} to {{ now.Year }}
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>

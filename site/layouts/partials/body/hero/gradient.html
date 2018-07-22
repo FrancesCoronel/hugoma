@@ -1,0 +1,34 @@
+<section class="hero is-medium is-primary is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Title -->
+      <h1 class="title">
+        {{ .Title }}
+      </h1>
+      <!-- Description -->
+      <h2 class="subtitle">
+        {{ .Description }}
+      </h2>
+      <!-- External Link -->
+      {{ with .Params.link }}
+      <h3>
+        <a class="external-link" href="{{ . }}" target="_blank" rel="noopener">
+          {{ . }}
+        </a>
+      </h3>
+      {{ end }}
+    </div>
+  </div>
+</section>
+<!-- Info -->
+{{ if .Content }}
+<section class="section pb-sm">
+  <div class="container">
+    <div class="content">
+      <div class="page-info">
+        {{ partial "body/hero/info.html" . }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

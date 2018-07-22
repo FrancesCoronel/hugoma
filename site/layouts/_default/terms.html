@@ -1,7 +1,9 @@
 {{ define "main" }}
-<div class="page">
-  {{ partial "hero/_index.html" . }}
-  <div class="page-body">
+<!-- Banner -->
+{{ partial "body/hero/_index.html" . }}
+<!-- Content -->
+<section class="section page">
+  <div class="container">
     <ol>
       {{ $data := .Data }} {{ range $key, $value := .Data.Terms.ByCount }}
       <li>
@@ -13,5 +15,6 @@
       {{ end }}
     </ol>
   </div>
-</div>
+</section>
+<!-- End Main -->
 {{ end }}

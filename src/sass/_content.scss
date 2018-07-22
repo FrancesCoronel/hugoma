@@ -16,18 +16,8 @@
     border-bottom-width: 1px;
     border-bottom-style: dotted;
     border-bottom-color: $links;
-    &:hover {
-      color: black;
-      border-bottom-width: 1px;
-      border-bottom-style: solid;
-      border-bottom-color: black;
-      img {
-        @extend %image-shadow;
-      }
-      img.emoji {
-        -webkit-box-shadow: none;
-        box-shadow: none;
-      }
+    img {
+      @extend %image-shadow;
     }
     &.button {
       border: 1px solid $button-border;
@@ -44,9 +34,21 @@
       border: none;
       color: black;
     }
+    &:hover {
+      color: black;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-bottom-color: black;
+      img {
+        @extend %material-shadow;
+      }
+      img.emoji {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+      }
+    }
   }
   img {
-    @extend %image-shadow;
     display: block;
     border: 0;
     display: inline-block;
@@ -95,4 +97,14 @@
 
 .media-content {
   color: black;
+}
+
+.page-info {
+  & img.emoji {
+    margin-right: 1em;
+  }
+}
+
+.box {
+  border-radius: 0;
 }

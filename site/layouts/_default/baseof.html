@@ -2,64 +2,20 @@
 <html lang="en">
 
 <head prefix="og: http://ogp.me/ns#">
-  <title>{{ .Title }}</title>
-  <!-- SEO -->
-  {{ partial "seo/_index.html" . }}
-  <!-- Favicons -->
-  {{ partial "favicons.html" }}
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="/assets/css/styles.css">
-  <!-- Prefetch Third Party Resources -->
-  <!-- Twemoji -->
-  <link rel="dns-prefetch" href="https://twemoji.maxcdn.com">
-  <!-- Google Analytics -->
-  <link rel="dns-prefetch" href="https://google-analytics.com">
-  <!-- Preload -->
-  <link rel="preload" href="/assets/css/styles.css" as="style">
-  <!-- Twemoji -->
-  <script src="https://twemoji.maxcdn.com/2/twemoji.min.js?11.0"></script>
+  {{ partial "head/_index.html" . }}
 </head>
 
 <body>
-  {{ partial "navbar.html" . }}
+  <!-- Return to Top -->
+  {{ partial "body/return-to-top.html" . }}
+  <!-- Navbar -->
+  {{ partial "body/navbar.html" . }}
   <!-- Main Block -->
   {{ block "main" . }} {{ end }}
   <!-- Footer -->
-  {{ partial "footer.html" . }}
+  {{ partial "body/footer.html" . }}
   <!-- Scripts -->
-  <!-- Custom JS -->
-  <script src="/assets/js/app.js"></script>
-  <!-- OneSignal Web Push Notifications & Service Worker Registration-->
-  <script async src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"></script>
-  <script>
-    // OneSignal
-    var OneSignal = window.OneSignal || [];
-    OneSignal.push(function () {
-      OneSignal.init({
-        appId: "e64fce8d-6d54-4434-8b76-3fde80e6bdf1",
-      });
-    });
-    // Service Worker
-    /** if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js').then(registration => {
-          console.info('The service worker was registered! 🎉', registration);
-        }).catch(registrationError => {
-          console.error('The service worker registration failed. 😭️', registrationError);
-        });
-      });
-    }**/
-
-  </script>
-  <style>
-    #onesignal-popover-container #onesignal-popover-dialog .popover-button.primary {
-      background: #253137 !important;
-    }
-
-    #onesignal-popover-container #onesignal-popover-dialog .popover-button.secondary {
-      color: #253137 !important;
-    }
-  </style>
+  {{ partial "body/scripts.html" . }}
 </body>
 
 </html>

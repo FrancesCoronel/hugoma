@@ -2,12 +2,12 @@
 title: Speaking 💬️
 description: Talks I've given at events.
 caption: "TypeScript 101 at CONNECT 2018 by Women Who Code"
-noComments: true
-speaking: true
 alphabetical: true
 filtering: true
-noTimeEstimate: true
 noCardImages: true
+noComments: true
+noTimeEstimate: true
+speaking: true
 aliases:
   - /speaking/
   - /home/services/speaking/

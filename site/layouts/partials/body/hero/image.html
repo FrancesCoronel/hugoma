@@ -1,0 +1,21 @@
+<section class="hero is-large is-primary is-bold background-image" style="background-image:url({{ .Params.banner }});">
+  <div class="hero-body"></div>
+</section>
+<section class="section pb-sm">
+  <div class="container">
+    <div class="content">
+      <!-- Title -->
+      <h1>{{ .Title }}</h1>
+      <div class="page-info">
+        <!-- Description -->
+        {{ if .Description }}
+        <p>
+          ℹ {{ .Description }}
+        </p>
+        {{ end }}
+        <!-- Info -->
+        {{ partial "body/hero/info.html" . }}
+      </div>
+    </div>
+  </div>
+</section>
