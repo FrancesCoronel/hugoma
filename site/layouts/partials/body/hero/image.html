@@ -1,4 +1,4 @@
-<section class="hero is-large is-primary is-bold background-image" style="background-image:url({{ .Params.banner }});">
+<section class="hero is-large is-primary background-image" style="background-image:url({{ .Params.banner }});">
   <div class="hero-body"></div>
 </section>
 <section class="section pb-sm">
@@ -6,7 +6,8 @@
     <div class="content">
       <!-- Title -->
       <h1>{{ .Title }}</h1>
-      <div class="page-info">
+      {{ if or (not .PublishDate.IsZero) (.Description) (.Params.lastPresented) (not .Params.noTimeEstimate) (.Params.link) (.Params.banner) }}
+      <div class="content-info">
         <!-- Description -->
         {{ if .Description }}
         <p>
@@ -15,6 +16,7 @@
         {{ end }}
         <!-- Info -->
         {{ partial "body/hero/info.html" . }}
+        <hr> {{ end }}
       </div>
     </div>
   </div>

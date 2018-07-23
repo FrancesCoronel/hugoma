@@ -2,10 +2,9 @@
 <!-- Banner -->
 {{ partial "body/hero/_index.html" . }}
 <!-- Content -->
-<section class="section page {{ if .Params.banner }}pt-sm{{ end }}">
+<section class="section{{ if .Params.banner }} pt-sm{{ end }}">
   <div class="container">
     {{ partial "body/content/_index.html" . }}
-    <hr>
     <div class="content">
       <!-- Range -->
       {{ range .Site.RegularPages.GroupByDate "2006" }} {{ partial "body/content/list/_index.html" . }} {{ end }}

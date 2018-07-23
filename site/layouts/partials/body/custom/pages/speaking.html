@@ -13,7 +13,7 @@
 <div class="columns is-multiline">
   {{ range ($.Site.Taxonomies.categories.upcoming).Pages.ByDate.Reverse }}
   <div class="column is-one-third">
-    {{ partial "body/content/card/article.html" . }}
+    {{ partial "body/content/card/no-image.html" . }}
   </div>
   {{ end }}
 </div>
@@ -23,7 +23,7 @@
 <div class="columns is-multiline">
   {{ range ($.Site.Taxonomies.categories.speaking).Pages.ByDate.Reverse }}
   <div class="column is-one-third">
-    {{ partial "body/content/card/article.html" . }}
+    {{ partial "body/content/card/no-image.html" . }}
   </div>
   {{ end }}
 </div>

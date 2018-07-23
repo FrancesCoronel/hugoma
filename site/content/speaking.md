@@ -7,6 +7,7 @@ filtering: true
 noCardImages: true
 noComments: true
 noTimeEstimate: true
+noHomePage: true
 speaking: true
 aliases:
   - /speaking/

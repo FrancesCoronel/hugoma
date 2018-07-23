@@ -11,26 +11,9 @@
   }
 }
 
-@media print, screen and (max-width: 768px) {
+@media print,
+screen and (max-width: 768px) {
   .hero.is-large .hero-body {
     padding: 10rem 0;
-  }
-}
-
-.background-image {
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: scroll;
-  @extend %text-shadow;
-  &.overlay {
-    @extend %image-shadow;
   }
 }

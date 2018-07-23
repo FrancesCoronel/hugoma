@@ -12,6 +12,11 @@ bannerLink: ''
 link: ''
 # Not ready for publishing
 draft: true
+# Pages
+noComments: true
+noTimeEstimate: true
+noHomePage: true
+speaking: true
 # taxonomy
 categories:
   - category

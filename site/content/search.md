@@ -26,8 +26,13 @@ table tbody tr,
 table tbody td,
 .gsst_a,
 input[type=text]:focus,
-td.gsc-input {
-  padding: 0;
+td.gsc-input,
+.gsc-table-result,
+.gsc-thumbnail-inside,
+.gsc-url-top,
+.gsc-table-cell-thumbnail .gsc-thumbnail,
+.gsc-tabsArea {
+  padding: 0 !important;
   margin: 0;
   border: none;
   box-shadow: none;
@@ -45,10 +50,6 @@ table tbody tr:nth-child(odd) {
 
 div#gsc-iw-id1 {
   border: 1px solid black;
-}
-
-td#gs_tti50 {
-  padding: 1em;
 }
 
 .cse .gsc-search-button input.gsc-search-button-v2,
@@ -70,7 +71,7 @@ a.gsst_a {
 }
 
 table.gsc-search-box {
-    display: inline-table;
+  display: inline-table;
 }
 
 .gsc-selected-option-container {
@@ -81,15 +82,61 @@ table.gsc-search-box {
   display: none;
 }
 
-.gsc-tabsArea > div {
+.gsc-tabsArea>div {
   overflow: hidden;
 }
 
+.gsc-input,
+.content table td,
+.content table th,
+.table td,
+.table th {
+  padding: 0 !important;
+}
+
+.gsc-results-wrapper-nooverlay.gsc-results-wrapper-visible {
+  margin-top: 5em !important;
+}
+
+td#gs_tti50 {
+  padding: 1em !important;
+}
+
+input#gsc-i-id1 {
+  background: none !important;
+  text-indent: 0 !important;
+  font-family: inherit !important;
+}
+
+.pagination,
+button,
+form,
+input,
+label,
+pre code,
+span,
+textarea {
+  font-size: 16px !important;
+  height: 20px !important;
+}
+
+div#resInfo-0 {
+    padding-left: 0 !important;
+}
+
+.gsc-tabsArea {
+    border-bottom: 1px solid #CCC;
+    margin-bottom: 1em;
+}
+
+.gsc-control-cse, .gsc-control-cse .gsc-table-result {
+  font-family: inherit !important;
+}
 </style>
 
 <script>
   (function() {
-    var cx = '008213476470887739041:759yvnjfd8i';
+    var cx = '008213476470887739041:ade_gb9mv7g';
     var gcse = document.createElement('script');
     gcse.type = 'text/javascript';
     gcse.async = true;

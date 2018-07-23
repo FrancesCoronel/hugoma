@@ -1,4 +1,5 @@
-// Margin
+/** Margin **/
+
 // Margin Top
 .mt-sm {
   margin-top: 0.5em;
@@ -35,14 +36,19 @@
   margin-left: 1em;
 }
 
-// Padding
+/** Padding **/
+
+// Padding Top
 .pt-sm {
   padding-top: .5em;
 }
 
+// Padding Bottom
 .pb-sm {
   padding-bottom: .5em;
 }
+
+/** Return To Top **/
 
 .return-to-top {
   -moz-transition: all .5s ease;
@@ -58,11 +64,10 @@
   text-decoration: none;
   transition: all .5s ease;
   z-index: 5000;
+  &.show {
+    display: block;
+  }
   &:hover {
     color: $primary;
   }
-}
-
-.return-to-top-show {
-  display: block;
 }

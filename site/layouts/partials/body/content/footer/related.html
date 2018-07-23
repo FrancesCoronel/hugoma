@@ -1,14 +1,13 @@
-{{ $categories := .Params.categories }} {{ if $categories }}
+{{ $related := .Site.RegularPages.Related . | first 3 }} {{ with $related }}
 <hr>
 <section class="section section-related">
   <h1>💭 Related</h1>
-  {{ $page_link := .Permalink }}
   <div class="columns is-multiline">
-    {{ range $page := .Site.Pages }} {{ $has_common_categories := intersect $categories .Params.categories | len | lt 0 }} {{ if and $has_common_categories (ne $page_link $page.Permalink) (lt ($.Scratch.Get "$c") 3)}} {{ $.Scratch.Add "$c" 1 }}
+    {{ range . }}
     <div class="column is-one-third">
       {{ partial "body/content/card/_index.html" . }}
     </div>
-    {{ end }} {{ end }}
+    {{ end }}
   </div>
 </section>
 {{ end }}

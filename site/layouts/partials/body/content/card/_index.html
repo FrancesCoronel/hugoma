@@ -1,37 +1,31 @@
-<!-- Checking for external link -->
-<a {{ if .Params.link }}href="{{ .Params.link }}" target="_blank" rel="noopener" {{ else }}href="{{ .RelPermalink }}" {{ end }}>
-  <div class="card card-equal-height">
-    <!-- Banner -->
-    {{ if and (.Params.banner) (not .Params.noCardImages) }}
-    <div class="card-image">
-      <figure class="image is-5by3">
-        <img src="{{ .Params.banner }}" alt="{{ .Title }}">
-      </figure>
-    </div>
+<div class="card card-equal-height">
+  <a class="reset" {{ if .Params.link }}href="{{ .Params.link }}" target="_blank" rel="noopener" {{ else }}href="{{ .RelPermalink }}" {{ end }}>
+    {{ if .Params.banner }}
+    <figure class="image is-5by3">
+      <img src="{{ .Params.banner }}" alt="{{ .Title }}">
+    </figure>
     {{ end }}
-    <!-- Title -->
-    <header class="card-header">
-      <h2 class="card-header-title">
-        {{ .Title }}
-      </h2>
-    </header>
-    <!-- Description -->
-    <div class="card-content">
+    <div class="media-content">
       <div class="content">
-        {{ if .Description }} {{ .Description | truncate 100 | safeHTML }} {{ else }} {{ .Summary | truncate 100 | safeHTML }} {{ end }}
-        <!-- Check Date -->
+        <!-- Title -->
+        <h4>{{ .Title }}</h4>
+        <!-- Description -->
+        <p class="has-text-grey-dark">{{ if .Description }}{{ .Description | truncate 100 | safeHTML }}{{ else }}{{ .Summary | truncate 100 | safeHTML }}{{ end }}</p>
+        <!-- Date -->
+        {{ if not .PublishDate.IsZero }}
+        <p class="subtitle has-text-weight-light is-size-6 mt-1">
+          <time datetime="{{ dateFormat " 2006-01-02 " .Date }}">
+            {{ dateFormat "January 2, 2006" .Date }}
+          </time> ∙ {{ .ReadingTime }} min read
+        </p>
+        {{ end }}
       </div>
-    </div>
-    <!-- Footer -->
-    <!-- Date -->
-    {{ if not .PublishDate.IsZero }}
-    <footer class="card-footer">
-      <p class="subtitle has-text-weight-light is-size-6">
-        <time datetime="{{ dateFormat " 2006-01-02 " .Date }}">
-          {{ dateFormat "January 2, 2006" .Date }}
-        </time> ∙ {{ .ReadingTime }} min read
-      </p>
-    </footer>
-    {{ end }}
+  </a>
+  <!-- Tags -->
+  {{ if .Params.tags }}
+  <div class="mt-1">
+    {{ partial "body/content/taxonomy/tags/tags.html" . }}
   </div>
-</a>
+  {{ end }}
+  </div>
+</div>

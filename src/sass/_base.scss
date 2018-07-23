@@ -8,7 +8,7 @@ a {
   &.navbar-item {
     &:hover {
       color: $links;
-      background-color: #eeeeee;
+      background-color: $light-gray;
     }
   }
   &.navbar-item.is-hidden-mobile.icon {

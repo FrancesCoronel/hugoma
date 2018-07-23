@@ -147,15 +147,13 @@ Footnote 2 link[^second].
 
 Inline footnote^[Text of inline footnote] definition.
 
-Duplicated footnote reference[^second].
-
 [^first]: Footnote **can have markup**
 
     and multiple paragraphs.
 
 [^second]: Footnote text.
 
-### [Definition lists](https://github.com/markdown-it/markdown-it-deflist)
+### Definition lists
 
 Term 1
 
@@ -170,7 +168,7 @@ Term 2 with *inline markup*
 
     Third paragraph of definition 2.
 
-### [Abbreviations](https://github.com/markdown-it/markdown-it-abbr)
+### Abbreviations
 
 This is HTML abbreviation example.
 

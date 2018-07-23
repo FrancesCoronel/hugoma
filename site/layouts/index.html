@@ -1,6 +1,6 @@
-{{- define "main" }}
+{{ define "main" }}
 <!-- Hero -->
-<section class="hero is-primary is-bold is-fullheight">
+<section class="hero is-primary is-fullheight">
   <div class="hero-body">
     <div class="container has-text-centered ">
       <h1 class="title">
@@ -21,11 +21,10 @@
     <div class="columns is-multiline">
       {{ range first 4 $.Site.RegularPages.ByDate.Reverse }}
       <div class="column is-half">
-        {{ partial "body/content/card/article.html" . }}
+        {{ partial "body/content/card/_index.html" . }}
       </div>
       {{ end }}
     </div>
-  </div>
   </div>
 </section>
 <hr>
@@ -48,4 +47,4 @@
     </div>
   </div>
 </section>
-{{- end }}
+{{ end }}

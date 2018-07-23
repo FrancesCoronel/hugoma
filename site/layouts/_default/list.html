@@ -1,8 +1,8 @@
 {{ define "main" }}
 <!-- Banner -->
-{{ partial "body/hero/_index.html" . }}
+{{ partial "body/hero/title.html" . }}
 <!-- Page -->
-<section class="section {{ if .Params.banner }}pt-sm{{ end }}">
+<section class="section{{ if .Params.banner }} pt-sm{{ end }}">
   <div class="container">
     <!-- Content -->
     <div class="content">

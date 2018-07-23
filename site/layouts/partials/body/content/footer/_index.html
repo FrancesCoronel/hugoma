@@ -1,4 +1,4 @@
-<div class="content-footer mt-2">
+<div class="content-footer">
   <!-- Share -->
   {{ partial "body/content/footer/share.html" . }}
   <!-- Donate -->
@@ -11,4 +11,6 @@
   {{ partial "body/content/footer/contribute.html" . }}
   <!-- Related -->
   {{ partial "body/content/footer/related.html" . }}
+  <!-- Pagination -->
+  {{ if .IsPage }} {{ partial "body/custom/pagination.html" . }} {{ end }}
 </div>

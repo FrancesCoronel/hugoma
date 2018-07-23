@@ -17,7 +17,7 @@ aliases:
     <div class="field">
       <label class="label">Name</label>
       <div class="control has-icons-left">
-        <input class="input" autocomplete="on" type="text" name="name" placeholder="Frances Coronel">
+        <input class="input" aria-label="Name" autocomplete="on" type="text" name="name" placeholder="Frances Coronel">
         <span class="icon is-small is-left">
           ✒️
         </span>
@@ -26,7 +26,7 @@ aliases:
     <div class="field">
       <label class="label">Email</label>
       <div class="control has-icons-left">
-        <input class="input" autocomplete="on" type="email" name="email" placeholder="hello@fvcproductions.com">
+        <input class="input" aria-label="Email" autocomplete="on" type="email" name="email" placeholder="hello@fvcproductions.com">
         <span class="icon is-small is-left">
           ✉️
         </span>
@@ -35,7 +35,7 @@ aliases:
     <div class="field">
       <label class="label">Message</label>
       <div class="control">
-        <textarea class="textarea" spellcheck="true" rows="5" name="message" id="message" placeholder="I want to contact you about..."></textarea>
+        <textarea class="textarea" aria-label="Message" spellcheck="true" rows="5" name="message" id="message" placeholder="I want to contact you about..."></textarea>
       </div>
     </div>
     <div class="field is-grouped">
@@ -57,7 +57,7 @@ This form uses [Formspree](https://formspree.io/) which doesn't require anything
     <div class="field">
       <label class="label">Your name</label>
       <div class="control has-icons-left">
-        <input class="input" autocomplete="on" type="text" name="name" placeholder="Frances Coronel">
+        <input class="input" aria-label="Name" autocomplete="on" type="text" name="name" placeholder="Frances Coronel">
         <span class="icon is-small is-left">
           <i class="fas fa-user"></i>
         </span>
@@ -66,7 +66,7 @@ This form uses [Formspree](https://formspree.io/) which doesn't require anything
     <div class="field">
       <label class="label">Email</label>
       <div class="control has-icons-left">
-        <input class="input" autocomplete="on" type="email" name="email" placeholder="hello@fvcproductions.com">
+        <input class="input" aria-label="Name" autocomplete="on" type="email" name="email" placeholder="hello@fvcproductions.com">
         <span class="icon is-small is-left">
           <i class="fas fa-envelope"></i>
         </span>
@@ -75,7 +75,7 @@ This form uses [Formspree](https://formspree.io/) which doesn't require anything
     <div class="field">
       <label class="label">Your message</label>
       <div class="control">
-        <textarea class="textarea" spellcheck="true" rows="5" name="message" id="message" placeholder="I want to contact you about..."></textarea>
+        <textarea class="textarea" aria-label="Message" spellcheck="true" rows="5" name="message" id="message" placeholder="I want to contact you about..."></textarea>
       </div>
     </div>
     <div class="field is-grouped">

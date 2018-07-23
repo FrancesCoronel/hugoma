@@ -1,20 +1,24 @@
 <!-- Date -->
 {{- if not .PublishDate.IsZero }}
-<p>📅️ Published {{ dateFormat "Monday - January 2, 2006" .Date }}</p>
+<p>
+  📅️ Published {{ dateFormat "Monday - January 2, 2006" .Date }}
+</p>
 <!-- Last Presented -->
 {{- if .Params.lastpresented }}
-<p>📆️ Last presented {{ dateFormat "Monday - January 2, 2006" .Params.lastpresented }}</p>
+<p>
+  📆️ Last presented {{ dateFormat "Monday - January 2, 2006" .Params.lastpresented }}
+</p>
 {{- end }} {{- end }}
 <!-- Reading Time & Word Count -->
-{{ if not .Params.noTimeEstimate }} {{ if .ReadingTime }} {{ if .WordCount }}
-<p>⏰ {{ .ReadingTime }} min read ∙ {{ .WordCount }} words</p>
-{{ end }} {{ end }} {{ end }}
+{{- if not .Params.noTimeEstimate }} {{ if .ReadingTime }} {{ if .WordCount }}
+<p>
+  ⏰ {{ .ReadingTime }} min read ∙ {{ .WordCount }} words
+</p>
+{{ end }} {{ end }} {{- end }}
 <!-- External Link -->
 {{- with .Params.link }}
-<p>↗️
+<p>
+  ↗️
   <a class="external-link" href="{{ . }}" target="_blank" rel="noopener">{{ . }}</a>
 </p>
 {{- end }}
-<!-- Line Separator -->
-{{ if and (.Content) (.Params.banner) }}
-<hr> {{ end }}

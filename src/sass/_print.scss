@@ -17,7 +17,7 @@
   h4 code,
   h5 code,
   h6 code {
-    color: #000;
+    color: black;
     padding-left: 0;
     padding-right: 0;
   }
@@ -32,15 +32,14 @@
   }
   .content-footer,
   footer,
-  nav, .card, .hero-body,
-  .columns,.columns .is-multiline, .column, .return-to-top, .pagination {
+  nav,
+  .card,
+  .hero-body,
+  .columns,
+  .columns .is-multiline,
+  .column,
+  .return-to-top,
+  .pagination {
     display: none;
-  }
-  .section a[href]::after {
-    content: "\0000a0(" attr(href) ")";
-    display: inline-block;
-    font: 14px/20px Roboto, sans-serif;
-    max-width: 100%;
-    word-wrap: break-word;
   }
 }

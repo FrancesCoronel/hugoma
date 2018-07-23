@@ -3,6 +3,7 @@ title                         = "Hugoma Theme"
 metaDataFormat                = "yaml"
 enableEmoji                   = true
 footnoteReturnLinkContents    = "↩"
+assetDir                      = "src"
 
 # Language
 languageCode                  = "en-us"
@@ -18,7 +19,7 @@ googleAnalytics               = "UA-63190978-3"
 disqusShortname               = "fvcproductions"
 
 # Pagination
-Paginate                      = 9
+Paginate                      = 6
 # PaginatePath                = "adventures"
 
 # Categories
@@ -92,9 +93,13 @@ preserveTaxonomyNames         = false
 # Shown on Desktop
 # Hidden on Mobile
 [[menu.right]]
-    name                    = "Search"
-    url                     = "/search/"
-    identifier              = "search"
+    name                      = "GitHub"
+    url                       = "https://github.com/fvcproductions/hugoma-theme"
+    identifier                = "github"
+[[menu.right]]
+    name                      = "Twitter"
+    url                       = "https://twitter.com/fvcproductions"
+    identifier                = "twitter"
 
 # Desktop Menu (Left)
 # Turns into hamburger menu on mobile
@@ -110,12 +115,18 @@ preserveTaxonomyNames         = false
 [[menu.left]]
     name                      = "Contact 📥"
     url                       = "/contact/"
-[[menu.left]]
-    name                      = "Getting Started 🌟️"
-    url                       = "/getting-started/"
+# [[menu.left]]
+#     name                      = "Getting Started 🌟️"
+#     url                       = "/getting-started/"
 [[menu.left]]
     name                      = "Portfolio 💼"
     url                       = "/portfolio/"
+[[menu.left]]
+    name                      = "Search 🔍️"
+    url                       = "/search/"
+[[menu.left]]
+    name                      = "Speaking 💬️"
+    url                       = "/speaking/"
 
 [taxonomies]
     category                  = "categories"

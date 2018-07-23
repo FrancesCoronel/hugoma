@@ -1,32 +1,26 @@
-<!-- Checking for external link -->
-<a {{ if .Params.link }}href="{{ .Params.link }}" target="_blank" rel="noopener" {{ else }}href="{{ .RelPermalink }}" {{ end }}>
-  <div class="card card-equal-height">
-    <!-- Title -->
-    <header class="card-header">
-      <h2 class="card-header-title">
-        {{ .Title }}
-      </h2>
-    </header>
-    <!-- Description -->
-    <div class="card-content">
+<div class="card card-equal-height">
+  <a class="reset" {{ if .Params.link }}href="{{ .Params.link }}" target="_blank" rel="noopener" {{ else }}href="{{ .RelPermalink }}" {{ end }}>
+    <div class="media-content">
       <div class="content">
-        {{ if .Description }} {{ .Description | truncate 100 | safeHTML }} {{ else }} {{ .Summary | truncate 100 | safeHTML }} {{ end }}
-        <!-- Check Date -->
-        {{ if not .PublishDate.IsZero }}
+        <!-- Title -->
+        <h4>{{ .Title }}</h4>
+        <!-- Description -->
+        <p class="has-text-grey-dark">{{ if .Description }}{{ .Description | truncate 100 | safeHTML }}{{ else }}{{ .Summary | truncate 100 | safeHTML }}{{ end }}</p>
         <!-- Date -->
-        <p class="mt-1 subtitle">
+        {{ if not .PublishDate.IsZero }}
+        <p class="subtitle has-text-weight-light is-size-6 mt-1">
           <time datetime="{{ dateFormat " 2006-01-02 " .Date }}">
             {{ dateFormat "January 2, 2006" .Date }}
-          </time>
+          </time> ∙ {{ .ReadingTime }} min read
         </p>
         {{ end }}
       </div>
-      {{ if .Params.tags }}
-      <div class="mt-sm">
-        {{ partial "body/content/taxonomy/tags/tags.html" . }}
-      </div>
-      {{ end }}
-    </div>
-
+  </a>
+  <!-- Tags -->
+  {{ if .Params.tags }}
+  <div class="mt-1">
+    {{ partial "body/content/taxonomy/tags/tags.html" . }}
   </div>
-</a>
+  {{ end }}
+  </div>
+</div>

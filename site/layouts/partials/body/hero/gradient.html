@@ -1,4 +1,4 @@
-<section class="hero is-medium is-primary is-bold">
+<section class="hero is-medium is-primary">
   <div class="hero-body">
     <div class="container">
       <!-- Title -->
@@ -6,9 +6,11 @@
         {{ .Title }}
       </h1>
       <!-- Description -->
+      {{ with .Description }}
       <h2 class="subtitle">
-        {{ .Description }}
+        {{ . }}
       </h2>
+      {{ end }}
       <!-- External Link -->
       {{ with .Params.link }}
       <h3>
@@ -21,12 +23,13 @@
   </div>
 </section>
 <!-- Info -->
-{{ if .Content }}
+{{ if or (not .PublishDate.IsZero) (.Params.lastPresented) (not .Params.noTimeEstimate) (.Params.link) }}
 <section class="section pb-sm">
   <div class="container">
     <div class="content">
-      <div class="page-info">
+      <div class="content-info">
         {{ partial "body/hero/info.html" . }}
+        <hr>
       </div>
     </div>
   </div>
