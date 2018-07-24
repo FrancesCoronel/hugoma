@@ -8,8 +8,7 @@
   "short_name": "Hugoma",
   "start_url": "/?utm_source=homescreen",
   "theme_color": "#FFFFFF",
-  "icons": [
-    {
+  "icons": [{
       "src": "/assets/img/favicons/36x36.png",
       "sizes": "36x36",
       "type": "image/png"

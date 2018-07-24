@@ -6,8 +6,6 @@ description: ''
 banner: ''
 # (Optional) Caption for banner image.
 caption: ''
-# (Optional) Link the featured image points to.
-bannerLink: ''
 # (Optional) Link this post redirects user to.
 link: ''
 # Not ready for publishing
@@ -19,9 +17,51 @@ noHomePage: true
 speaking: true
 # taxonomy
 categories:
-  - category
+  - award
+  - blog
+  - conference
+  - education
+  - experience
+  - hackathon
+  - portfolio
+    - book
+    - design
+    - mobile
+    - oss
+    - presentation
+    - research
+    - tutorial
+    - video
+    - web
+  - program
+  - review
+  - speaking
+    - bootcamps
+    - hourofcode
+    - typescript101
+    - webdesign
+    - wizard
+  - volunteering
 tags:
   - tag
 ---
 
-Content here
+## Name
+
+[Event](//google.com)
+
+## Location
+
+Address - City, State
+
+## Date
+
+Sunday, October 22nd - 9:00 AM to 5:00 PM
+
+## Role
+
+Participant, Volunteer, Speaker, Scholarship Recipient, Mentor
+
+## About
+
+It was amazing!

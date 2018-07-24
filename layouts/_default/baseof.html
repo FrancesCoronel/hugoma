@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/WebPage">
 
 <head prefix="og: http://ogp.me/ns#">
   {{- partial "head/_index.html" . -}}
@@ -15,7 +15,7 @@
     {{ block "main" . }}{{ end }}
   </div>
   <!-- Footer -->
-  {{- partial "body/footer.html" . -}}
+  {{- partial "body/footer/_index.html" . -}}
   <!-- Scripts -->
   {{- partial "body/scripts/_index.html" . -}}
 </body>

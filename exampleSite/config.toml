@@ -5,7 +5,7 @@ enableEmoji                   = true
 footnoteReturnLinkContents    = "↩"
 assetDir                      = "src"
 theme                         = "hugoma"
-themesDir = "../.."
+themesDir                     = "../.."
 
 # Language
 languageCode                  = "en-us"
@@ -50,6 +50,12 @@ preserveTaxonomyNames         = false
     search_url                = "https://www.fvcproductions.com/search/#gsc.tab=0&gsc.q={search_term_string}"
     # set to false to hide the Contributions footer
     contributions             = true
+    # OneSignal
+    one_signal_id             = "e64fce8d-6d54-4434-8b76-3fde80e6bdf1"
+    gcm_sender_id             = "482941778795"
+    # Manifest
+    name                      = "Hugoma Theme"
+    short_name                = "Hugoma"
 
 # Permalinks
 [permalinks]
@@ -60,6 +66,7 @@ preserveTaxonomyNames         = false
 [author]
     name                      = "Frances Coronel"
     copyright                 = "©️ FVCproductions"
+    email                     = "hello@fvcproductions.com"
 
 # Social Links
 [social]

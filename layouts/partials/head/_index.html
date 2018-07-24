@@ -1,3 +1,15 @@
+<!--
+        ******** **      **   ******
+        /**///// /**     /**  **////**
+        /**      /**     /** **    //
+        /******* //**    ** /**
+        /**////   //**  **  /**
+        /**        //****   //**    **
+        /**         //**     //******
+        //           //       //////
+
+        Yo, yo, yo.... whatcha up to...
+  -->
 <title>{{ .Title }}</title>
 <!-- SEO -->
 {{ partial "head/seo/_index.html" . }}
@@ -10,6 +22,10 @@
 <link rel="dns-prefetch" href="https://twemoji.maxcdn.com">
 <!-- Google Analytics -->
 <link rel="dns-prefetch" href="https://google-analytics.com">
+<!-- OneSignal -->
+<link rel="dns-prefetch" href="https://cdn.onesignal.com">
+<!-- Preconnect -->
+<link rel="preconnect" href="{{ .Site.BaseURL }}">
 <!-- Preload -->
 <link rel="preload" href="/assets/css/styles.css" as="style">
 <!-- Twemoji -->
