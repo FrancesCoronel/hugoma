@@ -52,3 +52,18 @@ table {
 hr {
   margin: 1rem 0;
 }
+
+.pagination-previous,
+.pagination-next,
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  text-transform: none;
+  white-space: nowrap;
+  display: inline-block;
+}

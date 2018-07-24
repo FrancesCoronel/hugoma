@@ -1,4 +1,8 @@
 .hero {
+  &.image {
+    @extend %image-shadow;
+    width: 100%;
+  }
   .title,
   .subtitle {
     color: white;

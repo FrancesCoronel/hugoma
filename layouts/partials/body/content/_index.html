@@ -1,0 +1,24 @@
+<div class="content">
+  <!-- Banner -->
+  {{ if .Params.banner }}
+  <div class="content-head">
+    {{ partial "body/hero/image.html" . }}
+  </div>
+  {{ end }}
+  <!-- Content Body -->
+  <div class="content-body">
+    {{- if .Content }}
+    <!-- Content -->
+    {{ .Content }}
+    <!-- No Content -->
+    {{ else }}
+    <p>No content for this page. 😅</p>
+    {{- end }}
+  </div>
+  <!-- Custom Pages -->
+  {{ partial "body/custom/pages/_index.html" . }}
+  <!-- Taxonomy -->
+  {{ partial "body/content/taxonomy/_index.html" . }}
+  <!-- Single Pages - Footer -->
+  {{- if .IsPage }} {{ partial "body/content/footer/_index.html" . }} {{- end }}
+</div>

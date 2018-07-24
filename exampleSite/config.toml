@@ -4,6 +4,8 @@ metaDataFormat                = "yaml"
 enableEmoji                   = true
 footnoteReturnLinkContents    = "↩"
 assetDir                      = "src"
+theme                         = "hugoma"
+themesDir = "../.."
 
 # Language
 languageCode                  = "en-us"
@@ -116,8 +118,8 @@ preserveTaxonomyNames         = false
     name                      = "Contact 📥"
     url                       = "/contact/"
 # [[menu.left]]
-#     name                      = "Getting Started 🌟️"
-#     url                       = "/getting-started/"
+#     name                    = "Getting Started 🌟️"
+#     url                     = "/getting-started/"
 [[menu.left]]
     name                      = "Portfolio 💼"
     url                       = "/portfolio/"
