@@ -7,7 +7,6 @@ enableRobotsTXT               = true
 footnoteReturnLinkContents    = "↩"
 metaDataFormat                = "yaml"
 theme                         = "hugoma"
-themesDir                     = "../.."
 
 # Language
 languageCode                  = "en-us"

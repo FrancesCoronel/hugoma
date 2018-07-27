@@ -36,6 +36,8 @@ This website uses [Hugo](https://gohugo.io/) as the static site generator and [G
 
 It is set up to use [PostCSS](http://postcss.org/) and [Babel](https://babeljs.io/) for Sass and JavaScript compilation and transpilation.
 
+For theme directory issues, refer to [this thread](https://discourse.gohugo.io/t/how-to-check-theme-locally-without-creating-a-hugo-project/12422/2).
+
 ### Structure
 
 ```text
@@ -56,9 +58,9 @@ It is set up to use [PostCSS](http://postcss.org/) and [Babel](https://babeljs.i
 └── webpack.config.js   // Webpack config
 ```
 
-## Live Action
+## Showcase
 
-- Website for [Techqueria.org](http://techqueria.org/)
+- Website for [Techqueria.org](http://beta.techqueria.org/)
 
 ## Contributing
 
