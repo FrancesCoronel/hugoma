@@ -69,8 +69,6 @@ export default {
     new WorkboxPlugin({
       cacheId: "hugoma",
       globDirectory: "dist",
-      globPatterns: ["index.html", "404.html", "**/*.{html,css,png,gif,jpg,svg,xml,js,ico,json}"],
-      globStrict: false,
       swDest: path.join("dist", "sw.js"),
       navigateFallback: "/offline",
       clientsClaim: true,
