@@ -8,7 +8,7 @@
     <!-- Left Icons -->
     <!-- Show only on mobile -->
     {{- range .Site.Menus.mobile }}
-    <a class="navbar-item is-hidden-desktop fa-{{ .Identifier }}" href="{{ .URL }}" {{ if .Identifier }}aria-label="{{ .Identifier }}" {{ end }} {{ if hasPrefix .URL "https://" }} target="_blank" rel="noopener" {{ end }}>
+    <a class="navbar-item is-hidden-desktop fa-{{ .Identifier }}" href="{{ .URL }}" {{ if .Name }}aria-label="{{ .Name }}" {{ end }} {{ if hasPrefix .URL "https://" }} target="_blank" rel="noopener" {{ end }}>
       {{ if .Identifier }} {{ $identifier := .Identifier }} {{ partial (printf "body/icons/%s.html" $identifier) }} {{ else }} {{ .Name }} {{ end }}
     </a>
     {{- end }}
@@ -60,7 +60,7 @@
       <!-- Right Navbar Items (Icons) -->
       <!-- Hidden on Mobile -->
       {{- if .Site.Menus.right }} {{ range .Site.Menus.right }} {{ $identifier := .Identifier }}
-      <a class="navbar-item is-hidden-mobile fa-{{ .Identifier }}" href="{{ .URL }}" {{ if .Identifier }}aria-label="{{ .Identifier }}" {{ end }} {{ if hasPrefix .URL "https://" }} target="_blank" rel="noopener" {{ end }}>
+      <a class="navbar-item is-hidden-mobile fa-{{ .Identifier }}" href="{{ .URL }}" {{ if .Name }}aria-label="{{ .Name }}" {{ end }} {{ if hasPrefix .URL "https://" }} target="_blank" rel="noopener" {{ end }}>
         {{ if .Identifier }} {{ partial (printf "body/icons/%s.html" $identifier) }} {{ else }} {{ .Name }} {{ end }}
       </a>
       {{ end }} {{- end }}

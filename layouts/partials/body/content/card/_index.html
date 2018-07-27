@@ -1,5 +1,5 @@
 <div class="card card-equal-height">
-  <a class="reset" {{ if .Params.link }}href="{{ .Params.link }}" target="_blank" rel="noopener" {{ else }}href="{{ .RelPermalink }}" {{ end }}>
+  <a class="reset" aria-label="{{ .Title }}" {{ if .Params.link }}href="{{ .Params.link }}" target="_blank" rel="noopener" {{ else }}href="{{ .RelPermalink }}" {{ end }}>
     {{ if .Params.banner }}
     <figure class="image is-5by3">
       <img src="{{ .Params.banner }}" alt="{{ .Title }}">
