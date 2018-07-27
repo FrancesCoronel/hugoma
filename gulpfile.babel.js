@@ -95,7 +95,7 @@ gulp.task("img", () =>
 // Copy static files
 gulp.task("static", () =>
   gulp
-  .src("./src/static/**/*")
+  .src("./static/**/*")
   .pipe(gulp.dest("./dist/assets"))
   .pipe(browserSync.stream())
 );
@@ -137,10 +137,10 @@ gulp.task("server", ["hugo", "sass", "js", "img", "static"], () => {
   watch("./src/img/**/*", () => {
     gulp.start(["img"]);
   });
-  watch("./src/assets/**/*", () => {
+  watch("./static/**/*", () => {
     gulp.start(["static"]);
   });
-  watch(["./layouts/**/*", "./static/**/*", "./exampleSite/content/**/*"], () => {
+  watch(["./layouts/**/*", "./static/**/*", "./exampleSite/**/*"], () => {
     gulp.start(["hugo"]);
   });
 });
