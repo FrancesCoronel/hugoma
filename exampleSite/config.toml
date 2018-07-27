@@ -1,9 +1,11 @@
 baseURL                       = "https://hugoma.fvcproductions.com"
 title                         = "Hugoma Theme"
-metaDataFormat                = "yaml"
-enableEmoji                   = true
-footnoteReturnLinkContents    = "↩"
+
 assetDir                      = "src"
+enableEmoji                   = true
+enableRobotsTXT               = true
+footnoteReturnLinkContents    = "↩"
+metaDataFormat                = "yaml"
 theme                         = "hugoma"
 themesDir                     = "../.."
 
@@ -22,7 +24,7 @@ disqusShortname               = "fvcproductions"
 
 # Pagination
 Paginate                      = 6
-# PaginatePath                = "adventures"
+PaginatePath                  = "adventures"
 
 # Categories
 preserveTaxonomyNames         = false
@@ -52,10 +54,6 @@ preserveTaxonomyNames         = false
     contributions             = true
     # OneSignal
     one_signal_id             = "e64fce8d-6d54-4434-8b76-3fde80e6bdf1"
-    gcm_sender_id             = "482941778795"
-    # Manifest
-    name                      = "Hugoma Theme"
-    short_name                = "Hugoma"
 
 # Permalinks
 [permalinks]
