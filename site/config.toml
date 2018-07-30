@@ -6,7 +6,7 @@ enableEmoji                   = true
 enableRobotsTXT               = true
 footnoteReturnLinkContents    = "↩"
 metaDataFormat                = "yaml"
-# theme                         = "hugoma"
+# theme                       = "hugoma"
 
 # Language
 languageCode                  = "en-us"
@@ -22,8 +22,8 @@ googleAnalytics               = "UA-63190978-3"
 disqusShortname               = "fvcproductions"
 
 # Pagination
-Paginate                      = 6
-PaginatePath                  = "adventures"
+Paginate                      = 9
+# PaginatePath                = "adventures"
 
 # Categories
 preserveTaxonomyNames         = false
@@ -56,8 +56,9 @@ preserveTaxonomyNames         = false
 
 # Permalinks
 [permalinks]
-    blog                      = "/blog/:year/:month/:day/:title/"
-    portfolio                 = "/portfolio/:year/:month/:day/:title/"
+    # blog                    = "/blog/:year/:month/:day/:title/"
+    # portfolio               = "/portfolio/:year/:month/:day/:title/"
+    adventures                = "/adventures/:year/:month/:day/:title/"
 
 # Author
 [author]
@@ -121,9 +122,6 @@ preserveTaxonomyNames         = false
 [[menu.left]]
     name                      = "Contact 📥"
     url                       = "/contact/"
-# [[menu.left]]
-#     name                    = "Getting Started 🌟️"
-#     url                     = "/getting-started/"
 [[menu.left]]
     name                      = "Portfolio 💼"
     url                       = "/portfolio/"

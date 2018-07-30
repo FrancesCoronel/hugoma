@@ -17,8 +17,6 @@
   </div>
   <!-- Custom Pages -->
   {{ partial "body/custom/pages/_index.html" . }}
-  <!-- Taxonomy -->
-  {{ partial "body/content/taxonomy/_index.html" . }}
   <!-- Single Pages - Footer -->
   {{- if .IsPage }} {{ partial "body/content/footer/_index.html" . }} {{- end }}
 </div>
