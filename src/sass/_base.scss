@@ -1,6 +1,9 @@
 body {
   font-size: $font-size;
   word-wrap: break-word;
+  @media screen and (max-width: $mobile) {
+    font-size: $font-size-mobile;
+  }
 }
 
 a {

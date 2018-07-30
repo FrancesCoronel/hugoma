@@ -27,7 +27,7 @@ import webpackConfig from "./webpack.config";
 const browserSync = BrowserSync.create();
 
 // Hugo arguments
-const hugoArgsDefault = ["-d", "../dist", "-s", "exampleSite"];
+const hugoArgsDefault = ["-d", "../dist", "-s", "site"];
 
 // Verbose Hugo Log
 // const hugoArgsVerbose = ["-d", "../dist", "-s", "site", "-v"];
@@ -96,7 +96,7 @@ gulp.task("img", () =>
 gulp.task("static", () =>
   gulp
   .src("./static/**/*")
-  .pipe(gulp.dest("./dist/assets"))
+  .pipe(gulp.dest("./dist"))
   .pipe(browserSync.stream())
 );
 
@@ -140,7 +140,7 @@ gulp.task("server", ["hugo", "sass", "js", "img", "static"], () => {
   watch("./static/**/*", () => {
     gulp.start(["static"]);
   });
-  watch(["./layouts/**/*", "./static/**/*", "./exampleSite/content/**/*"], () => {
+  watch(["./layouts/**/*", "./content/**/*", "./data/**/*"], () => {
     gulp.start(["hugo"]);
   });
 });

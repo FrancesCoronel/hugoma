@@ -68,10 +68,10 @@ export default {
     new CompressionPlugin(),
     new WorkboxPlugin({
       cacheId: "hugoma",
+      swDest: path.join("dist", "sw.js"),
       globDirectory: "dist",
       globPatterns: ["index.html", "404.html", "**/*.{css,png,gif,jpg,svg,xml,js,ico,json}"],
       globStrict: false,
-      swDest: path.join("dist", "sw.js"),
       navigateFallback: "/offline",
       clientsClaim: true,
       skipWaiting: true,

@@ -6,7 +6,7 @@ enableEmoji                   = true
 enableRobotsTXT               = true
 footnoteReturnLinkContents    = "↩"
 metaDataFormat                = "yaml"
-theme                         = "hugoma"
+# theme                         = "hugoma"
 
 # Language
 languageCode                  = "en-us"
