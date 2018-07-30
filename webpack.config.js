@@ -72,6 +72,7 @@ export default {
       globDirectory: "dist",
       globPatterns: ["index.html", "404.html", "**/*.{css,png,gif,jpg,svg,xml,js,ico,json}"],
       globStrict: false,
+      navigateFallback: "/offline/index.html",
       clientsClaim: true,
       skipWaiting: true,
       runtimeCaching: [{
