@@ -1,25 +1,25 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path:
-webhook_url:
+admin_path: 
+webhook_url: 
 sections:
 - type: directory
-  path: content
+  path: site/content
   label: Pages
   create: all
   match: "*"
 - type: directory
-  path: content/blog
+  path: site/content/blog
   label: Blog
   create: all
   match: "**/*"
 - type: directory
-  path: content/portfolio
+  path: site/content/portfolio
   label: Portfolio
   create: all
   match: "**/*"
-upload_dir: static/uploads
+upload_dir: site/static/uploads
 public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: false

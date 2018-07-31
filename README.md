@@ -45,11 +45,12 @@ For theme directory issues, refer to [this thread](https://discourse.gohugo.io/t
 ├── gulpfile.babel.js   // Build processes
 ├── netlify.toml        // Netlify deployment config
 ├── package.json        // NPM packages
-├── archetypes          // Default templates
-├── config.toml         // Hugo config
-├── content             // Content goes here
-├── layouts             // Layouts for pages and posts
-├── static              // Any static files
+├── site                // Compiles to dist
+|  ├── archetypes       // Default templates
+|  ├── config.toml      // Hugo config
+|  ├── content          // Content goes here
+|  ├── layouts          // Layouts for pages and posts
+|  └── static           // Any static files
 ├── src                 // Go to assets directory in dist
 |  ├── img              // Minified
 |  ├── js               // Compressed and transpiled
