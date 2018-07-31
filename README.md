@@ -2,7 +2,7 @@
 
 ![Hugoma Theme](https://i.imgur.com/mGA3X7m.png)
 
-[![GitHub Issues](https://img.shields.io/github/issues/fvcproductions/hugoma-theme.svg?style=flat-square)](https://github.com/fvcproductions/hugoma-theme/issues) [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/fvcproductions/hugoma-theme.svg?style=flat-square)](https://github.com/fvcproductions/hugoma-theme/pulls) [![MIT License](https://img.shields.io/github/license/fvcproductions/hugoma-theme.svg?style=flat-square)](http://badges.mit-license.org)
+[![GitHub Issues](https://img.shields.io/github/issues/fvcproductions/hugoma.svg?style=flat-square)](https://github.com/fvcproductions/hugoma/issues) [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/fvcproductions/hugoma.svg?style=flat-square)](https://github.com/fvcproductions/hugoma/pulls) [![MIT License](https://img.shields.io/github/license/fvcproductions/hugoma.svg?style=flat-square)](http://badges.mit-license.org)
 
 A starter theme for Hugo created with Bulma and optimized with modern workflows and tooling. 🌟️
 
@@ -66,13 +66,13 @@ For theme directory issues, refer to [this thread](https://discourse.gohugo.io/t
 
 > To get started...
 
-1.  🍴 [Fork this repo](https://github.com/fvcproductions/hugoma-theme#fork-destination-box)
+1.  🍴 [Fork this repo](https://github.com/fvcproductions/hugoma#fork-destination-box)
 2.  🔨 View the contributing guidelines at [CONTRIBUTING.md](CONTRIBUTING.md)
 3.  👥 Add yourself as a contributor under the credits section
-4.  🔧 [Open a new pull request](https://github.com/fvcproductions/hugoma-theme/compare)
+4.  🔧 [Open a new pull request](https://github.com/fvcproductions/hugoma/compare)
 5.  🎉 Get your pull request approved - success!
 
-Or just [create an issue](https://github.com/fvcproductions/hugoma-theme/issues) - any little bit of help counts! 😊
+Or just [create an issue](https://github.com/fvcproductions/hugoma/issues) - any little bit of help counts! 😊
 
 ## Code of Conduct
 
