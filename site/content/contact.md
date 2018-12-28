@@ -55,25 +55,25 @@ This form uses [Formspree](https://formspree.io/) which doesn't require anything
   <form method="POST" action="https://formspree.io/hello@fvcproductions.com">
     <input type="hidden" name="_subject" value="Hugoma Theme - New Contact Message">
     <div class="field">
-      <label class="label">Your name</label>
+      <label class="label">Name</label>
       <div class="control has-icons-left">
         <input class="input" aria-label="Name" autocomplete="on" type="text" name="name" placeholder="Frances Coronel">
         <span class="icon is-small is-left">
-          <i class="fas fa-user"></i>
+          ✒️
         </span>
       </div>
     </div>
     <div class="field">
       <label class="label">Email</label>
       <div class="control has-icons-left">
-        <input class="input" aria-label="Name" autocomplete="on" type="email" name="email" placeholder="hello@fvcproductions.com">
+        <input class="input" aria-label="Email" autocomplete="on" type="email" name="email" placeholder="hello@fvcproductions.com">
         <span class="icon is-small is-left">
-          <i class="fas fa-envelope"></i>
+          ✉️
         </span>
       </div>
     </div>
     <div class="field">
-      <label class="label">Your message</label>
+      <label class="label">Message</label>
       <div class="control">
         <textarea class="textarea" aria-label="Message" spellcheck="true" rows="5" name="message" id="message" placeholder="I want to contact you about..."></textarea>
       </div>
