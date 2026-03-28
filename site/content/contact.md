@@ -12,7 +12,7 @@ aliases:
 ## You can contact me using the form below.
 
 <section class="contact-form">
-  <form method="POST" action="https://formspree.io/hello@fvcproductions.com">
+  <form method="POST" action="https://formspree.io/hello@francescoronel.com">
     <input type="hidden" name="_subject" value="Hugoma Theme - New Contact Message">
     <div class="field">
       <label class="label">Name</label>
@@ -26,7 +26,7 @@ aliases:
     <div class="field">
       <label class="label">Email</label>
       <div class="control has-icons-left">
-        <input class="input" aria-label="Email" autocomplete="on" type="email" name="email" placeholder="hello@fvcproductions.com">
+        <input class="input" aria-label="Email" autocomplete="on" type="email" name="email" placeholder="hello@francescoronel.com">
         <span class="icon is-small is-left">
           ✉️
         </span>
@@ -52,7 +52,7 @@ This form uses [Formspree](https://formspree.io/) which doesn't require anything
 
 ```html
 <section class="contact-form">
-  <form method="POST" action="https://formspree.io/hello@fvcproductions.com">
+  <form method="POST" action="https://formspree.io/hello@francescoronel.com">
     <input type="hidden" name="_subject" value="Hugoma Theme - New Contact Message">
     <div class="field">
       <label class="label">Name</label>
@@ -66,7 +66,7 @@ This form uses [Formspree](https://formspree.io/) which doesn't require anything
     <div class="field">
       <label class="label">Email</label>
       <div class="control has-icons-left">
-        <input class="input" aria-label="Email" autocomplete="on" type="email" name="email" placeholder="hello@fvcproductions.com">
+        <input class="input" aria-label="Email" autocomplete="on" type="email" name="email" placeholder="hello@francescoronel.com">
         <span class="icon is-small is-left">
           ✉️
         </span>
